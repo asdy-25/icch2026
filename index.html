@@ -1,0 +1,1750 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>المؤتمر العلمي الدولي الخامس — الذكاء الاصطناعي وتطبيقاته في العلوم الإنسانية | 5th International Scientific Conference — AI and Its Applications in the Humanities</title>
+<meta name="description" content="المؤتمر العلمي الدولي الخامس لكلية التربية للعلوم الإنسانية — جامعة كربلاء | 15 أكتوبر 2026">
+<meta property="og:title" content="المؤتمر العلمي الدولي الخامس — الذكاء الاصطناعي وتطبيقاته في العلوم الإنسانية">
+<meta property="og:description" content="15 أكتوبر 2026 — كلية التربية للعلوم الإنسانية، جامعة كربلاء">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@300;400;600;700;900&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --green-deep: #0F4C3A;
+  --green-darker: #093528;
+  --green-soft: #1B6B52;
+  --copper: #A67B3D;
+  --copper-light: #C89454;
+  --cream: #FBF8F3;
+  --cream-warm: #F4EFE4;
+  --ink: #1A1F1A;
+  --ink-soft: #4A524A;
+  --divider: #E5DFD3;
+  --white: #FFFFFF;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+section { scroll-margin-top: 80px; }
+[id] { scroll-margin-top: 80px; }
+
+body {
+  font-family: 'Cairo', 'Segoe UI', sans-serif;
+  background: var(--cream);
+  color: var(--ink);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+body[dir="ltr"] {
+  font-family: 'Cormorant Garamond', 'Cairo', serif;
+}
+
+/* ============ HEADER ============ */
+.top-bar {
+  background: var(--green-darker);
+  color: var(--cream);
+  padding: 8px 20px;
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.top-bar .location { opacity: 0.85; }
+
+.lang-toggle {
+  background: var(--copper);
+  color: var(--white);
+  border: none;
+  padding: 6px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 13px;
+  transition: background 0.2s;
+}
+.lang-toggle:hover { background: var(--copper-light); }
+
+.nav-header {
+  background: var(--white);
+  border-bottom: 1px solid var(--divider);
+  padding: 16px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(15, 76, 58, 0.06);
+}
+
+.nav-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-mark {
+  width: 44px;
+  height: 44px;
+  background: var(--green-deep);
+  color: var(--cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Amiri', serif;
+  font-size: 22px;
+  font-weight: 700;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.brand-text {
+  font-size: 14px;
+  line-height: 1.3;
+  color: var(--green-deep);
+  font-weight: 600;
+}
+.brand-text small {
+  display: block;
+  font-size: 11px;
+  color: var(--ink-soft);
+  font-weight: 400;
+  margin-top: 2px;
+}
+
+.main-nav {
+  display: flex;
+  gap: 22px;
+}
+
+.main-nav a {
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 6px 0;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s, color 0.2s;
+}
+.main-nav a:hover { color: var(--green-deep); border-bottom-color: var(--copper); }
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--green-deep);
+}
+
+@media (max-width: 900px) {
+  .main-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    inset-inline-start: 0;
+    inset-inline-end: 0;
+    background: var(--white);
+    flex-direction: column;
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--divider);
+    gap: 12px;
+  }
+  .main-nav.open { display: flex; }
+  .menu-toggle { display: block; }
+}
+
+/* ============ HERO ============ */
+.hero {
+  background: linear-gradient(135deg, var(--green-deep) 0%, var(--green-darker) 100%);
+  color: var(--cream);
+  padding: 60px 20px 70px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle at 20% 30%, rgba(200,148,84,0.08) 0%, transparent 40%),
+                    radial-gradient(circle at 80% 70%, rgba(200,148,84,0.06) 0%, transparent 40%);
+  pointer-events: none;
+}
+
+.hero-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+.hero-eyebrow {
+  font-family: 'Amiri', serif;
+  font-size: 18px;
+  color: var(--copper-light);
+  letter-spacing: 1px;
+  margin-bottom: 18px;
+}
+
+.hero-number {
+  font-family: 'Amiri', serif;
+  font-size: 72px;
+  color: var(--copper-light);
+  line-height: 1;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.hero-title {
+  font-family: 'Amiri', serif;
+  font-size: clamp(28px, 5vw, 44px);
+  line-height: 1.3;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+body[dir="ltr"] .hero-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+}
+
+.hero-theme {
+  font-size: clamp(16px, 2.5vw, 20px);
+  color: var(--cream-warm);
+  opacity: 0.9;
+  margin-bottom: 30px;
+  font-style: italic;
+  max-width: 700px;
+  margin-inline: auto;
+}
+
+.hero-meta {
+  display: inline-flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 16px 28px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 4px;
+  border: 1px solid rgba(200,148,84,0.3);
+  margin-bottom: 32px;
+}
+
+.hero-meta-item {
+  font-size: 15px;
+  color: var(--cream);
+}
+.hero-meta-item strong {
+  color: var(--copper-light);
+  font-weight: 700;
+  display: block;
+  font-size: 13px;
+  margin-bottom: 4px;
+  letter-spacing: 0.5px;
+}
+
+.hero-ctas {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 14px 28px;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: inline-block;
+  font-family: inherit;
+}
+
+.btn-primary {
+  background: var(--copper);
+  color: var(--white);
+}
+.btn-primary:hover { background: var(--copper-light); transform: translateY(-1px); }
+
+.btn-outline {
+  background: transparent;
+  color: var(--cream);
+  border: 2px solid var(--cream);
+}
+.btn-outline:hover { background: var(--cream); color: var(--green-deep); }
+
+/* ============ AUSPICES BAND ============ */
+.auspices {
+  background: var(--cream-warm);
+  padding: 40px 20px;
+  text-align: center;
+  border-bottom: 1px solid var(--divider);
+}
+.auspices-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.auspices-label {
+  font-family: 'Amiri', serif;
+  font-size: 20px;
+  color: var(--copper);
+  margin-bottom: 12px;
+}
+.auspices-list {
+  font-size: 15px;
+  color: var(--ink);
+  line-height: 1.9;
+}
+.auspices-list strong {
+  color: var(--green-deep);
+  display: block;
+  font-size: 16px;
+  margin-top: 8px;
+}
+.auspices-supervisor {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--divider);
+}
+
+/* ============ SECTIONS ============ */
+section.content {
+  padding: 70px 20px;
+}
+
+.section-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section-head {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.section-eyebrow {
+  font-family: 'Amiri', serif;
+  color: var(--copper);
+  font-size: 15px;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.section-title {
+  font-family: 'Amiri', serif;
+  font-size: clamp(26px, 4vw, 36px);
+  color: var(--green-deep);
+  font-weight: 700;
+}
+body[dir="ltr"] .section-title {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.section-rule {
+  width: 60px;
+  height: 3px;
+  background: var(--copper);
+  margin: 16px auto 0;
+}
+
+/* ============ ABOUT ============ */
+.about-text {
+  font-size: 17px;
+  line-height: 1.9;
+  color: var(--ink-soft);
+  max-width: 780px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+/* ============ OBJECTIVES ============ */
+.section-alt { background: var(--cream-warm); }
+
+.objectives-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.objective-card {
+  background: var(--white);
+  padding: 26px 22px;
+  border-inline-start: 3px solid var(--copper);
+  border-radius: 2px;
+  position: relative;
+}
+
+.objective-num {
+  font-family: 'Amiri', serif;
+  font-size: 32px;
+  color: var(--copper);
+  line-height: 1;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.objective-text {
+  font-size: 15px;
+  color: var(--ink);
+  line-height: 1.6;
+}
+
+/* ============ THEMES ============ */
+.themes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 22px;
+  margin-top: 30px;
+}
+
+.theme-card {
+  background: var(--white);
+  padding: 28px 24px;
+  border-radius: 4px;
+  border: 1px solid var(--divider);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.theme-card:hover {
+  box-shadow: 0 8px 24px rgba(15, 76, 58, 0.1);
+  transform: translateY(-2px);
+}
+
+.theme-header {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--divider);
+  margin-bottom: 16px;
+}
+
+.theme-num {
+  font-family: 'Amiri', serif;
+  font-size: 28px;
+  color: var(--copper);
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.theme-title {
+  font-family: 'Amiri', serif;
+  font-size: 19px;
+  color: var(--green-deep);
+  font-weight: 700;
+  line-height: 1.3;
+}
+body[dir="ltr"] .theme-title {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.theme-list {
+  list-style: none;
+  padding: 0;
+}
+.theme-list li {
+  font-size: 14px;
+  color: var(--ink-soft);
+  padding: 6px 0 6px 18px;
+  position: relative;
+  line-height: 1.5;
+}
+body[dir="rtl"] .theme-list li { padding: 6px 18px 6px 0; }
+.theme-list li::before {
+  content: "◆";
+  position: absolute;
+  inset-inline-start: 0;
+  color: var(--copper);
+  font-size: 9px;
+  top: 12px;
+}
+
+/* ============ REQUIREMENTS + DATES SPLIT ============ */
+.split-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 30px;
+}
+@media (max-width: 800px) {
+  .split-grid { grid-template-columns: 1fr; gap: 30px; }
+}
+
+.info-block h3 {
+  font-family: 'Amiri', serif;
+  font-size: 22px;
+  color: var(--green-deep);
+  margin-bottom: 18px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--copper);
+}
+body[dir="ltr"] .info-block h3 {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.req-list {
+  list-style: none;
+  padding: 0;
+}
+.req-list li {
+  font-size: 15px;
+  padding: 10px 0;
+  border-bottom: 1px dashed var(--divider);
+  color: var(--ink);
+  line-height: 1.6;
+  display: flex;
+  gap: 12px;
+}
+.req-list li:last-child { border-bottom: none; }
+.req-list li strong {
+  color: var(--green-deep);
+  flex-shrink: 0;
+  font-weight: 700;
+}
+
+/* ============ TIMELINE ============ */
+.timeline {
+  margin-top: 20px;
+}
+.timeline-item {
+  display: flex;
+  gap: 20px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--divider);
+  align-items: center;
+}
+.timeline-item:last-child { border-bottom: none; }
+
+.timeline-date {
+  background: var(--green-deep);
+  color: var(--cream);
+  padding: 12px 16px;
+  border-radius: 2px;
+  text-align: center;
+  min-width: 90px;
+  flex-shrink: 0;
+}
+.timeline-date .day {
+  font-family: 'Amiri', serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--copper-light);
+}
+.timeline-date .month {
+  font-size: 12px;
+  margin-top: 4px;
+  opacity: 0.9;
+}
+
+.timeline-text {
+  font-size: 15px;
+  color: var(--ink);
+  font-weight: 600;
+}
+
+/* ============ FEES ============ */
+.fees-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: var(--white);
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(15, 76, 58, 0.06);
+}
+
+.fees-table th {
+  background: var(--green-deep);
+  color: var(--cream);
+  padding: 14px 16px;
+  text-align: start;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.fees-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--divider);
+  font-size: 14px;
+  color: var(--ink);
+}
+
+.fees-table tr:last-child td { border-bottom: none; }
+.fees-table tr:hover { background: var(--cream-warm); }
+
+.fees-table .price {
+  font-weight: 700;
+  color: var(--copper);
+  white-space: nowrap;
+}
+.fees-table .price.free {
+  color: var(--green-soft);
+}
+
+.fees-note {
+  margin-top: 20px;
+  padding: 16px 20px;
+  background: var(--cream-warm);
+  border-inline-start: 3px solid var(--copper);
+  font-size: 14px;
+  color: var(--ink-soft);
+  line-height: 1.7;
+}
+
+@media (max-width: 700px) {
+  .fees-table { font-size: 13px; }
+  .fees-table th, .fees-table td { padding: 10px 8px; }
+}
+
+/* ============ COMMITTEES ============ */
+.committees-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-top: 30px;
+}
+
+.committee-card {
+  background: var(--white);
+  padding: 22px 18px;
+  text-align: center;
+  border: 1px solid var(--divider);
+  border-radius: 4px;
+  transition: border-color 0.2s;
+}
+.committee-card:hover { border-color: var(--copper); }
+
+.committee-icon {
+  width: 40px;
+  height: 40px;
+  background: var(--green-deep);
+  color: var(--copper-light);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 12px;
+  font-family: 'Amiri', serif;
+  font-weight: 700;
+}
+
+.committee-name {
+  font-size: 15px;
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.chairs {
+  margin-top: 30px;
+  padding: 24px;
+  background: var(--white);
+  border-radius: 4px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  border: 1px solid var(--divider);
+}
+@media (max-width: 600px) {
+  .chairs { grid-template-columns: 1fr; }
+}
+
+.chair-item {
+  text-align: center;
+}
+.chair-role {
+  font-size: 13px;
+  color: var(--ink-soft);
+  margin-bottom: 6px;
+}
+.chair-phone {
+  font-family: 'Amiri', serif;
+  font-size: 18px;
+  color: var(--green-deep);
+  font-weight: 700;
+  direction: ltr;
+  display: inline-block;
+}
+.chair-phone a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid var(--copper);
+}
+
+/* ============ SUBMIT / CTA ============ */
+.cta-band {
+  background: var(--green-deep);
+  color: var(--cream);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.cta-title {
+  font-family: 'Amiri', serif;
+  font-size: clamp(24px, 4vw, 32px);
+  margin-bottom: 16px;
+  color: var(--cream);
+}
+body[dir="ltr"] .cta-title {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.cta-text {
+  font-size: 16px;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ============ FOOTER ============ */
+footer {
+  background: var(--green-darker);
+  color: var(--cream);
+  padding: 40px 20px 20px;
+  text-align: center;
+}
+
+.footer-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+  font-size: 14px;
+}
+.footer-links a {
+  color: var(--copper-light);
+  text-decoration: none;
+  padding-bottom: 3px;
+  border-bottom: 1px solid transparent;
+}
+.footer-links a:hover { border-bottom-color: var(--copper-light); }
+
+.footer-partners {
+  font-size: 13px;
+  opacity: 0.8;
+  line-height: 1.9;
+  margin-bottom: 20px;
+}
+
+.footer-copy {
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+/* ============ PAYMENT METHODS ============ */
+.payment-section {
+  margin-top: 44px;
+}
+.payment-heading {
+  font-family: 'Amiri', serif;
+  font-size: 22px;
+  color: var(--green-deep);
+  margin-bottom: 22px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--copper);
+  text-align: center;
+}
+body[dir="ltr"] .payment-heading {
+  font-family: 'Cormorant Garamond', serif;
+}
+.payment-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+@media (max-width: 700px) {
+  .payment-grid { grid-template-columns: 1fr; }
+}
+.payment-box {
+  background: var(--white);
+  padding: 26px 24px;
+  border-radius: 4px;
+  border: 1px solid var(--divider);
+  border-top: 3px solid var(--green-deep);
+}
+.payment-box.external {
+  border-top-color: var(--copper);
+}
+.payment-title {
+  font-family: 'Amiri', serif;
+  font-size: 18px;
+  color: var(--green-deep);
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+body[dir="ltr"] .payment-title {
+  font-family: 'Cormorant Garamond', serif;
+}
+.payment-desc {
+  font-size: 14.5px;
+  color: var(--ink);
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+.account-row {
+  background: var(--cream-warm);
+  padding: 12px 16px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+.account-type {
+  font-size: 13px;
+  color: var(--ink-soft);
+  font-weight: 600;
+}
+.account-number {
+  font-family: 'Amiri', serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--green-deep);
+  direction: ltr;
+  letter-spacing: 0.5px;
+}
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #25D366;
+  color: white !important;
+  padding: 11px 18px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  direction: ltr;
+  margin-top: 6px;
+  transition: background 0.2s;
+}
+.whatsapp-btn:hover { background: #128C7E; }
+.whatsapp-btn svg { width: 18px; height: 18px; }
+
+/* ============ PARTICIPATION STEPS ============ */
+.steps-box {
+  max-width: 780px;
+  margin: 0 auto 32px;
+  background: rgba(255,255,255,0.06);
+  padding: 26px 24px;
+  border-radius: 4px;
+  border: 1px solid rgba(200,148,84,0.3);
+}
+.steps-label {
+  font-family: 'Amiri', serif;
+  font-size: 15px;
+  color: var(--copper-light);
+  margin-bottom: 18px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+body[dir="ltr"] .steps-label {
+  font-family: 'Cormorant Garamond', serif;
+}
+.steps-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+@media (max-width: 640px) {
+  .steps-row { grid-template-columns: 1fr; gap: 16px; }
+}
+.step-item {
+  text-align: center;
+}
+.step-num {
+  font-family: 'Amiri', serif;
+  font-size: 34px;
+  color: var(--copper-light);
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+.step-text {
+  font-size: 14px;
+  color: var(--cream);
+  line-height: 1.5;
+}
+
+/* ============ LANG VISIBILITY ============ */
+.ar-only { display: block; }
+.en-only { display: none; }
+[dir="ltr"] .ar-only { display: none; }
+[dir="ltr"] .en-only { display: block; }
+span.ar-only, span.en-only { display: inline; }
+[dir="ltr"] span.ar-only { display: none; }
+[dir="rtl"] span.en-only { display: none; }
+[dir="ltr"] span.en-only { display: inline; }
+
+</style>
+</head>
+<body>
+
+<!-- ========== TOP BAR ========== -->
+<div class="top-bar">
+  <span class="location">
+    <span class="ar-only">🇮🇶 كلية التربية للعلوم الإنسانية — جامعة كربلاء</span>
+    <span class="en-only">🇮🇶 College of Education for the Humanities — University of Kerbala</span>
+  </span>
+  <button class="lang-toggle" onclick="toggleLang()">
+    <span class="ar-only">English</span>
+    <span class="en-only">العربية</span>
+  </button>
+</div>
+
+<!-- ========== NAV HEADER ========== -->
+<header class="nav-header">
+  <div class="nav-inner">
+    <div class="brand">
+      <div class="brand-mark">V</div>
+      <div class="brand-text">
+        <span class="ar-only">ICCH 2026 — المؤتمر الخامس</span>
+        <span class="en-only">ICCH 2026 — 5th Conference</span>
+        <small>
+          <span class="ar-only">كلية التربية للعلوم الإنسانية</span>
+          <span class="en-only">College of Education for the Humanities</span>
+        </small>
+      </div>
+    </div>
+    <nav class="main-nav" id="mainNav">
+      <a href="#about"><span class="ar-only">عن المؤتمر</span><span class="en-only">About</span></a>
+      <a href="#themes"><span class="ar-only">المحاور</span><span class="en-only">Themes</span></a>
+      <a href="#requirements"><span class="ar-only">الشروط</span><span class="en-only">Requirements</span></a>
+      <a href="#fees"><span class="ar-only">الأجور</span><span class="en-only">Fees</span></a>
+      <a href="#dates"><span class="ar-only">المواعيد</span><span class="en-only">Dates</span></a>
+      <a href="#submit"><span class="ar-only">التسجيل</span><span class="en-only">Register</span></a>
+      <a href="#contact"><span class="ar-only">التواصل</span><span class="en-only">Contact</span></a>
+    </nav>
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="menu">☰</button>
+  </div>
+</header>
+
+<!-- ========== HERO ========== -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-eyebrow">
+      <span class="ar-only">المؤتمر العلمي الدولي</span>
+      <span class="en-only">The International Scientific Conference</span>
+    </div>
+    <div class="hero-number">V</div>
+    <h1 class="hero-title">
+      <span class="ar-only">الذكاء الاصطناعي وتطبيقاته<br>في العلوم الإنسانية</span>
+      <span class="en-only">Artificial Intelligence<br>and Its Applications in the Humanities</span>
+    </h1>
+    <p class="hero-theme">
+      <span class="ar-only">«جسور المعرفة بين الإنسان والتقنيات الذكية»</span>
+      <span class="en-only">"Bridging Knowledge Between Humans and Smart Technologies"</span>
+    </p>
+    <div class="hero-meta">
+      <div class="hero-meta-item">
+        <strong><span class="ar-only">تاريخ الانعقاد</span><span class="en-only">CONFERENCE DATE</span></strong>
+        <span class="ar-only">الخميس 15 / 10 / 2026</span>
+        <span class="en-only">Thursday, October 15, 2026</span>
+      </div>
+      <div class="hero-meta-item">
+        <strong><span class="ar-only">آخر موعد للبحوث</span><span class="en-only">SUBMISSION DEADLINE</span></strong>
+        <span class="ar-only">1 / 10 / 2026</span>
+        <span class="en-only">October 1, 2026</span>
+      </div>
+      <div class="hero-meta-item">
+        <strong><span class="ar-only">صيغة الانعقاد</span><span class="en-only">FORMAT</span></strong>
+        <span class="ar-only">إلكتروني / حضوري</span>
+        <span class="en-only">Electronic / In-Person</span>
+      </div>
+    </div>
+    <div class="hero-ctas">
+      <a href="#submit" class="btn btn-primary">
+        <span class="ar-only">تقديم بحث</span>
+        <span class="en-only">Submit a Paper</span>
+      </a>
+      <a href="#about" class="btn btn-outline">
+        <span class="ar-only">التفاصيل الكاملة</span>
+        <span class="en-only">Learn More</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== UNDER THE AUSPICES ========== -->
+<section class="auspices">
+  <div class="auspices-inner">
+    <div class="auspices-label">
+      <span class="ar-only">برعـــــــــــــــاية</span>
+      <span class="en-only">Under the Auspices of</span>
+    </div>
+    <div class="auspices-list">
+      <span class="ar-only">السيد رئيس جامعة كربلاء</span>
+      <span class="en-only">The President of the University of Kerbala</span>
+      <strong>
+        <span class="ar-only">الأستاذ الدكتور صباح واجد علي</span>
+        <span class="en-only">Prof. Sabah Wajid Ali (PhD)</span>
+      </strong>
+      <br>
+      <span class="ar-only">رئيس جامعة الحلة الأهلية</span>
+      <span class="en-only">The President of the University of Hilla</span>
+      <strong>
+        <span class="ar-only">الأستاذ الدكتور عقيل مجيد كاظم</span>
+        <span class="en-only">Prof. Aqeel Majeed Kazem (PhD)</span>
+      </strong>
+      <br>
+      <span class="ar-only">رئيس جامعة العين العراقية</span>
+      <span class="en-only">The President of Al-Ayen University</span>
+      <strong>
+        <span class="ar-only">الأستاذ الدكتور حيدر عبد الأمير مرهون</span>
+        <span class="en-only">Prof. Haider Abdul Amir Marhoon (PhD)</span>
+      </strong>
+    </div>
+    <div class="auspices-supervisor">
+      <div class="auspices-label" style="font-size:17px;">
+        <span class="ar-only">وبإشراف السيد عميد كلية التربية للعلوم الإنسانية</span>
+        <span class="en-only">Supervised by the Dean of the College</span>
+      </div>
+      <strong style="color:var(--green-deep);font-size:16px;">
+        <span class="ar-only">الأستاذ الدكتور هادي شندوخ حميد</span>
+        <span class="en-only">Prof. Hadi Shandoukh Hameed (PhD)</span>
+      </strong>
+    </div>
+  </div>
+</section>
+
+<!-- ========== ABOUT ========== -->
+<section class="content" id="about">
+  <div class="section-inner">
+    <div class="section-head">
+      <div class="section-eyebrow">
+        <span class="ar-only">ديباجة</span>
+        <span class="en-only">Preface</span>
+      </div>
+      <h2 class="section-title">
+        <span class="ar-only">عن المؤتمر</span>
+        <span class="en-only">About the Conference</span>
+      </h2>
+      <div class="section-rule"></div>
+    </div>
+    <div class="about-text">
+      <span class="ar-only">
+        يشهد العالم في العقود الأخيرة ثورة علمية وتكنولوجية غير مسبوقة يقودها الذكاء الاصطناعي، الذي أصبح حجر الأساس في تطوير مختلف العلوم والمجالات. وقد بات من الضروري دراسة أثره في العلوم الإنسانية بمختلف فروعها، لما له من دور محوري في بناء المعرفة وتوجيه الفكر الإنساني نحو الإبداع والتجديد.
+        <br><br>
+        ومن هذا المنطلق، تنظم كلية التربية للعلوم الإنسانية — جامعة كربلاء مؤتمرها العلمي الدولي الخامس بوصفه منصة أكاديمية تجمع الباحثين والمفكرين لاستكشاف آفاق جديدة للذكاء الاصطناعي في خدمة الإنسان والمعرفة.
+      </span>
+      <span class="en-only">
+        In recent decades, the world has witnessed an unprecedented scientific and technological revolution driven by artificial intelligence, which has become the cornerstone in the advancement of various sciences and fields. It has therefore become essential to examine its impact on the Humanities in all their branches, given its pivotal role in building knowledge and guiding human thought toward creativity and innovation.
+        <br><br>
+        From this standpoint, the College of Education for the Humanities at the University of Kerbala is organising its Fifth International Scientific Conference as an academic platform that brings together researchers and scholars to explore new horizons for artificial intelligence in the service of humanity and knowledge.
+      </span>
+    </div>
+  </div>
+</section>
+
+<!-- ========== OBJECTIVES ========== -->
+<section class="content section-alt">
+  <div class="section-inner">
+    <div class="section-head">
+      <div class="section-eyebrow">
+        <span class="ar-only">الأهداف</span>
+        <span class="en-only">Goals</span>
+      </div>
+      <h2 class="section-title">
+        <span class="ar-only">أهداف المؤتمر</span>
+        <span class="en-only">Conference Objectives</span>
+      </h2>
+      <div class="section-rule"></div>
+    </div>
+    <div class="objectives-grid">
+      <div class="objective-card">
+        <div class="objective-num">I</div>
+        <div class="objective-text">
+          <span class="ar-only">إبراز أثر الذكاء الاصطناعي في تطوير العلوم الإنسانية</span>
+          <span class="en-only">Highlighting the impact of artificial intelligence on the development of the Humanities</span>
+        </div>
+      </div>
+      <div class="objective-card">
+        <div class="objective-num">II</div>
+        <div class="objective-text">
+          <span class="ar-only">تبادل الخبرات بين الباحثين في المجالات الأكاديمية والتقنية</span>
+          <span class="en-only">Exchanging expertise among researchers in academic and technological fields</span>
+        </div>
+      </div>
+      <div class="objective-card">
+        <div class="objective-num">III</div>
+        <div class="objective-text">
+          <span class="ar-only">تشجيع البحوث متعددة التخصصات في ميدان الذكاء الاصطناعي</span>
+          <span class="en-only">Encouraging interdisciplinary research in the field of artificial intelligence</span>
+        </div>
+      </div>
+      <div class="objective-card">
+        <div class="objective-num">IV</div>
+        <div class="objective-text">
+          <span class="ar-only">تسليط الضوء على التحديات الأخلاقية والمعرفية في العصر الرقمي</span>
+          <span class="en-only">Shedding light on ethical and epistemological challenges in the digital age</span>
+        </div>
+      </div>
+      <div class="objective-card">
+        <div class="objective-num">V</div>
+        <div class="objective-text">
+          <span class="ar-only">دعم مسيرة التعليم والبحث العلمي باستخدام الذكاء الاصطناعي</span>
+          <span class="en-only">Advancing education and scientific research through utilising artificial intelligence</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== THEMES ========== -->
+<section class="content" id="themes">
+  <div class="section-inner">
+    <div class="section-head">
+      <div class="section-eyebrow">
+        <span class="ar-only">خمسة مسارات بحثية</span>
+        <span class="en-only">Five Research Tracks</span>
+      </div>
+      <h2 class="section-title">
+        <span class="ar-only">محاور المؤتمر</span>
+        <span class="en-only">Conference Themes</span>
+      </h2>
+      <div class="section-rule"></div>
+    </div>
+    <div class="themes-grid">
+
+      <div class="theme-card">
+        <div class="theme-header">
+          <div class="theme-num">I</div>
+          <div class="theme-title">
+            <span class="ar-only">تطبيقات الذكاء الاصطناعي في اللغة الإنجليزية</span>
+            <span class="en-only">AI Applications in English Language Studies</span>
+          </div>
+        </div>
+        <ul class="theme-list ar-only">
+          <li>الذكاء الاصطناعي في تعليم اللغة الإنجليزية للناطقين بغيرها</li>
+          <li>استخدام الذكاء الاصطناعي في الترجمة الآلية والتحليل النصي</li>
+          <li>تطوير الاختبارات الإلكترونية المعتمدة على الذكاء الاصطناعي</li>
+          <li>تحليل الخطاب والتفاعل اللغوي باستخدام الذكاء الاصطناعي</li>
+          <li>بناء مناهج تعليمية تفاعلية قائمة على الذكاء الاصطناعي</li>
+        </ul>
+        <ul class="theme-list en-only">
+          <li>AI in teaching English as a foreign language</li>
+          <li>AI employment in machine translation and text analysis</li>
+          <li>Developing AI-based electronic testing systems</li>
+          <li>Discourse analysis and linguistic interaction using AI</li>
+          <li>Designing interactive, AI-supported instructional curricula</li>
+        </ul>
+      </div>
+
+      <div class="theme-card">
+        <div class="theme-header">
+          <div class="theme-num">II</div>
+          <div class="theme-title">
+            <span class="ar-only">تطبيقات الذكاء الاصطناعي في العلوم التربوية والنفسية</span>
+            <span class="en-only">AI Applications in Educational and Psychological Sciences</span>
+          </div>
+        </div>
+        <ul class="theme-list ar-only">
+          <li>توظيف الذكاء الاصطناعي في تطوير المناهج وطرائق التدريس</li>
+          <li>استخدام الذكاء الاصطناعي في تشخيص المشكلات التعليمية والنفسية</li>
+          <li>الذكاء الاصطناعي في إدارة الصفوف الذكية وتحليل سلوك الطلبة</li>
+          <li>تطوير أدوات القياس النفسي والتربوي بمساعدة الذكاء الاصطناعي</li>
+          <li>الذكاء الاصطناعي في التعليم الدامج وخدمة الطلبة ذوي الاحتياجات الخاصة</li>
+        </ul>
+        <ul class="theme-list en-only">
+          <li>Employing AI in curriculum development and teaching methodologies</li>
+          <li>Using AI to diagnose educational and psychological difficulties</li>
+          <li>AI in managing smart classrooms and analysing student behaviour</li>
+          <li>Developing psychological and educational measurement tools with AI support</li>
+          <li>AI as a tool in inclusive education and in serving students with disabilities</li>
+        </ul>
+      </div>
+
+      <div class="theme-card">
+        <div class="theme-header">
+          <div class="theme-num">III</div>
+          <div class="theme-title">
+            <span class="ar-only">تطبيقات الذكاء الاصطناعي في الجغرافية التطبيقية</span>
+            <span class="en-only">AI Applications in Applied Geography</span>
+          </div>
+        </div>
+        <ul class="theme-list ar-only">
+          <li>الذكاء الاصطناعي في تحليل البيانات المكانية والاستشعار عن بُعد</li>
+          <li>التنبؤ بالكوارث الطبيعية عبر خوارزميات الذكاء الاصطناعي</li>
+          <li>استخدام الذكاء الاصطناعي في التخطيط الحضري والبيئي</li>
+          <li>الذكاء الاصطناعي في نظم المعلومات الجغرافية (GIS)</li>
+          <li>تحليل التغيرات المناخية بالاعتماد على تقنيات الذكاء الاصطناعي</li>
+        </ul>
+        <ul class="theme-list en-only">
+          <li>AI in spatial data analysis and remote sensing</li>
+          <li>Predicting natural disasters through AI algorithms</li>
+          <li>Using AI in urban and environmental planning</li>
+          <li>AI in Geographic Information Systems (GIS)</li>
+          <li>Analysing climate change using AI technologies</li>
+        </ul>
+      </div>
+
+      <div class="theme-card">
+        <div class="theme-header">
+          <div class="theme-num">IV</div>
+          <div class="theme-title">
+            <span class="ar-only">تطبيقات الذكاء الاصطناعي في اللغة العربية</span>
+            <span class="en-only">AI Applications in Arabic Language Studies</span>
+          </div>
+        </div>
+        <ul class="theme-list ar-only">
+          <li>الذكاء الاصطناعي في تعليم اللغة العربية للناطقين بغيرها</li>
+          <li>الذكاء الاصطناعي في الترجمة الآلية ومعالجة اللغة العربية طبيعياً</li>
+          <li>تطوير أدوات التدقيق اللغوي والكتابة الذكية باللغة العربية</li>
+          <li>الذكاء الاصطناعي في حفظ التراث اللغوي والأدبي العربي</li>
+          <li>تعزيز الهوية الثقافية العربية في عصر الذكاء الاصطناعي</li>
+        </ul>
+        <ul class="theme-list en-only">
+          <li>AI in teaching Arabic to non-native speakers</li>
+          <li>AI in machine translation and Natural Language Processing (NLP) for Arabic</li>
+          <li>Developing Arabic intelligent writing tools and proofreading systems</li>
+          <li>AI in preserving Arabic linguistic and literary heritage</li>
+          <li>Enhancing Arab cultural identity in the era of AI</li>
+        </ul>
+      </div>
+
+      <div class="theme-card">
+        <div class="theme-header">
+          <div class="theme-num">V</div>
+          <div class="theme-title">
+            <span class="ar-only">تطبيقات الذكاء الاصطناعي في التاريخ</span>
+            <span class="en-only">AI Applications in History</span>
+          </div>
+        </div>
+        <ul class="theme-list ar-only">
+          <li>استخدام الذكاء الاصطناعي في أرشفة ورقمنة المخطوطات والوثائق التاريخية</li>
+          <li>إعادة بناء الأحداث والمواقع التاريخية وفق صور ثلاثية الأبعاد باستخدام الذكاء الاصطناعي</li>
+          <li>استخدام الذكاء الاصطناعي في تحليل النصوص التاريخية</li>
+          <li>الاستفادة من الذكاء الاصطناعي في كشف التزوير في المخطوطات والوثائق التاريخية</li>
+          <li>استخدام الواقع الافتراضي المدعوم بالذكاء الاصطناعي لإعادة تصور المدن التاريخية</li>
+          <li>نمذجة الشخصيات التاريخية باستخدام الذكاء الاصطناعي لإعادة بناء السلوكيات أو الحوارات المحتملة</li>
+        </ul>
+        <ul class="theme-list en-only">
+          <li>Using AI to archive and digitise manuscripts and historical documents</li>
+          <li>Reconstructing historical events and sites through AI-generated 3D imagery</li>
+          <li>Applying AI in the analysis of historical texts</li>
+          <li>Using AI to detect forgery in manuscripts and historical documents</li>
+          <li>Employing AI-supported virtual reality to reimagine historical cities</li>
+          <li>Modelling historical figures with AI to recreate possible behaviours or dialogues</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== REQUIREMENTS + DATES ========== -->
+<section class="content section-alt" id="requirements">
+  <div class="section-inner">
+    <div class="section-head">
+      <div class="section-eyebrow">
+        <span class="ar-only">للباحثين</span>
+        <span class="en-only">For Researchers</span>
+      </div>
+      <h2 class="section-title">
+        <span class="ar-only">شروط المشاركة والمواعيد</span>
+        <span class="en-only">Requirements and Dates</span>
+      </h2>
+      <div class="section-rule"></div>
+    </div>
+
+    <div class="split-grid">
+
+      <div class="info-block">
+        <h3>
+          <span class="ar-only">شروط المشاركة</span>
+          <span class="en-only">Participation Requirements</span>
+        </h3>
+        <ul class="req-list ar-only">
+          <li><strong>الأصالة:</strong> ان يكون البحث غير مستلّ او قد سبق المشاركة به في ندوات او مؤتمرات او أي محفل علمي سابق</li>
+          <li><strong>الحجم:</strong> عدد صفحات البحث بين (15–25) صفحة قياس A4</li>
+          <li><strong>الصيغة:</strong> يقدم البحث بصيغة Docx</li>
+          <li><strong>الخطوط:</strong> 16 للعناوين الرئيسة، 14 للمتن، 12 للهوامش</li>
+          <li><strong>البيانات:</strong> يكتب في أسفل عنوان البحث مكان عمل الباحث وإيميله الرسمي وهاتفه</li>
+          <li><strong>الملخص:</strong> لا تزيد كلمات الملخص عن (150) كلمة باللغتين العربية والإنكليزية، وتُكتب بعده الكلمات المفتاحية</li>
+          <li><strong>الأخلاقيات:</strong> الالتزام بأساسيات وأخلاقيات البحث العلمي</li>
+        </ul>
+        <ul class="req-list en-only">
+          <li><strong>Originality:</strong> Papers must be original and not previously presented in any seminar, conference, or academic forum</li>
+          <li><strong>Length:</strong> The paper should be between 15 and 25 pages (A4 size)</li>
+          <li><strong>Format:</strong> Papers must be submitted in Docx format</li>
+          <li><strong>Font sizes:</strong> Main headings 16, body text 14, footnotes/margins 12</li>
+          <li><strong>Author info:</strong> At the bottom of the paper title, authors must include their affiliation, official email, and phone number</li>
+          <li><strong>Abstract:</strong> Abstracts must not exceed 150 words in both Arabic and English, followed by the research keywords</li>
+          <li><strong>Ethics:</strong> Researchers must adhere to the rules and standards of rigorous academic research</li>
+        </ul>
+      </div>
+
+      <div class="info-block" id="dates">
+        <h3>
+          <span class="ar-only">مواعيد مهمة</span>
+          <span class="en-only">Important Dates</span>
+        </h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">
+              <div class="day">15</div>
+              <div class="month"><span class="ar-only">آب</span><span class="en-only">Aug</span></div>
+            </div>
+            <div class="timeline-text">
+              <span class="ar-only">بدء تقديم البحوث</span>
+              <span class="en-only">Submission of papers begins</span>
+              <br><small style="color:var(--ink-soft);font-weight:400">2026</small>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">
+              <div class="day">01</div>
+              <div class="month"><span class="ar-only">تشرين ١</span><span class="en-only">Oct</span></div>
+            </div>
+            <div class="timeline-text">
+              <span class="ar-only">آخر موعد لاستلام البحوث</span>
+              <span class="en-only">Deadline for receiving papers</span>
+              <br><small style="color:var(--ink-soft);font-weight:400">2026</small>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date" style="background:var(--copper);">
+              <div class="day">15</div>
+              <div class="month"><span class="ar-only">تشرين ١</span><span class="en-only">Oct</span></div>
+            </div>
+            <div class="timeline-text">
+              <strong style="color:var(--green-deep);">
+                <span class="ar-only">انعقاد المؤتمر — الخميس</span>
+                <span class="en-only">Conference Date — Thursday</span>
+              </strong>
+              <br><small style="color:var(--ink-soft);font-weight:400">2026</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== FEES ========== -->
+<section class="content" id="fees">
+  <div class="section-inner">
+    <div class="section-head">
+      <div class="section-eyebrow">
+        <span class="ar-only">التكاليف</span>
+        <span class="en-only">Costs</span>
+      </div>
+      <h2 class="section-title">
+        <span class="ar-only">أجور المشاركة والنشر</span>
+        <span class="en-only">Participation and Publication Fees</span>
+      </h2>
+      <div class="section-rule"></div>
+    </div>
+
+    <table class="fees-table ar-only">
+      <thead>
+        <tr>
+          <th>نوع المشاركة</th>
+          <th>مع النشر</th>
+          <th>بدون نشر</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>من داخل العراق — بحث منفرد <small>(تشمل الإقامة الفندقية)</small></td>
+          <td class="price">100,000 د.ع</td>
+          <td class="price">50,000 د.ع</td>
+        </tr>
+        <tr>
+          <td>من داخل الكلية — بحث منفرد</td>
+          <td class="price">75,000 د.ع</td>
+          <td class="price">50,000 د.ع</td>
+        </tr>
+        <tr>
+          <td>من داخل العراق — بحث مشترك <small>(تشمل الإقامة الفندقية)</small></td>
+          <td class="price">150,000 د.ع</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td>من خارج العراق</td>
+          <td class="price free">مجاناً</td>
+          <td class="price free">مجاناً</td>
+        </tr>
+        <tr>
+          <td>الحضور مع شهادة الحضور فقط</td>
+          <td colspan="2" class="price">25,000 د.ع</td>
+        </tr>
+        <tr>
+          <td>المشاركة الإلكترونية — داخل العراق</td>
+          <td class="price">60,000 د.ع</td>
+          <td class="price">25,000 د.ع</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="fees-table en-only">
+      <thead>
+        <tr>
+          <th>Participation Type</th>
+          <th>With Publication</th>
+          <th>Without Publication</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Iraq — Single author <small>(includes hotel accommodation)</small></td>
+          <td class="price">100,000 IQD</td>
+          <td class="price">50,000 IQD</td>
+        </tr>
+        <tr>
+          <td>College of Education/Kerbala — Single author</td>
+          <td class="price">75,000 IQD</td>
+          <td class="price">50,000 IQD</td>
+        </tr>
+        <tr>
+          <td>Iraq — Co-authored <small>(includes hotel accommodation)</small></td>
+          <td class="price">150,000 IQD</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td>Outside Iraq</td>
+          <td class="price free">Free</td>
+          <td class="price free">Free</td>
+        </tr>
+        <tr>
+          <td>Attendance with certificate only</td>
+          <td colspan="2" class="price">25,000 IQD</td>
+        </tr>
+        <tr>
+          <td>Electronic participation — from Iraq</td>
+          <td class="price">60,000 IQD</td>
+          <td class="price">25,000 IQD</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="fees-note ar-only">
+      <strong style="color:var(--green-deep);">ملاحظات:</strong><br>
+      • سيتم تزويد الباحثين برابط خاص للمشاركة الإلكترونية.<br>
+      • يزوَّد الباحث الأول بحقيبة المؤتمر ونسخة من كتاب الملخصات وشهادة مشاركة.<br>
+      • لا يتحمل المؤتمر نفقات السفر للمشاركين من خارج العراق.
+    </div>
+    <div class="fees-note en-only">
+      <strong style="color:var(--green-deep);">Notes:</strong><br>
+      • Researchers will be provided with a special link for electronic participation.<br>
+      • The first author will receive the conference bag, a copy of the abstract book, and a certificate of participation.<br>
+      • The conference does not cover travel expenses for participants from outside Iraq.
+    </div>
+
+    <!-- ============ PAYMENT METHODS ============ -->
+    <div class="payment-section">
+      <h3 class="payment-heading">
+        <span class="ar-only">طرق دفع الأجور</span>
+        <span class="en-only">Payment Methods</span>
+      </h3>
+
+      <div class="payment-grid">
+
+        <div class="payment-box">
+          <div class="payment-title">
+            <span class="ar-only">من داخل الجامعة</span>
+            <span class="en-only">From Inside the University</span>
+          </div>
+          <p class="payment-desc">
+            <span class="ar-only">يتم الدفع مباشرة في <strong>شعبة الشؤون المالية</strong> بعمادة كلية التربية للعلوم الإنسانية.</span>
+            <span class="en-only">Direct payment at the <strong>Financial Affairs Division</strong>, Dean's Office, College of Education for the Humanities.</span>
+          </p>
+        </div>
+
+        <div class="payment-box external">
+          <div class="payment-title">
+            <span class="ar-only">من خارج الجامعة أو خارج كربلاء</span>
+            <span class="en-only">From Outside the University / Kerbala</span>
+          </div>
+          <p class="payment-desc">
+            <span class="ar-only">تحويل الأجور إلى أحد الحسابين:</span>
+            <span class="en-only">Transfer the fees to one of these accounts:</span>
+          </p>
+          <div class="account-row">
+            <span class="account-type">Super Key</span>
+            <span class="account-number">0771 548 1032</span>
+          </div>
+          <div class="account-row">
+            <span class="account-type">Key</span>
+            <span class="account-number">2834674026</span>
+          </div>
+          <p class="payment-desc" style="margin-top:14px;margin-bottom:6px;">
+            <span class="ar-only">ثم إرسال صورة وصل التحويل عبر واتساب:</span>
+            <span class="en-only">Then send a photo of the transfer receipt via WhatsApp:</span>
+          </p>
+          <a href="https://wa.me/9647817228444" target="_blank" class="whatsapp-btn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.6"/></svg>
+            <span>0781 722 8444</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ========== SUBMIT CTA ========== -->
+<section class="cta-band" id="submit">
+  <h2 class="cta-title">
+    <span class="ar-only">جاهز للمشاركة؟</span>
+    <span class="en-only">Ready to Participate?</span>
+  </h2>
+  <p class="cta-text">
+    <span class="ar-only">آخر موعد لاستلام البحوث 1 / 10 / 2026</span>
+    <span class="en-only">Submission deadline: October 1, 2026</span>
+  </p>
+
+  <div class="steps-box">
+    <div class="steps-label">
+      <span class="ar-only">خطوات المشاركة</span>
+      <span class="en-only">Participation Steps</span>
+    </div>
+    <div class="steps-row">
+      <div class="step-item">
+        <div class="step-num">I</div>
+        <div class="step-text">
+          <span class="ar-only">تقديم البحث عبر بوابة المجلة</span>
+          <span class="en-only">Submit paper via journal portal</span>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">II</div>
+        <div class="step-text">
+          <span class="ar-only">استلام القبول ودفع الأجور</span>
+          <span class="en-only">Receive acceptance & pay fees</span>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">III</div>
+        <div class="step-text">
+          <span class="ar-only">إرسال وصل التحويل عبر واتساب</span>
+          <span class="en-only">Send transfer receipt via WhatsApp</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cta-buttons">
+    <a href="https://journals.uokerbala.edu.iq/index.php/bjh/conference" target="_blank" class="btn btn-primary">
+      <span class="ar-only">تقديم البحث عبر المجلة</span>
+      <span class="en-only">Submit via Journal Portal</span>
+    </a>
+    <a href="#fees" class="btn btn-outline">
+      <span class="ar-only">طرق الدفع</span>
+      <span class="en-only">Payment Methods</span>
+    </a>
+    <a href="https://wa.me/9647817228444" target="_blank" class="btn btn-outline">
+      <span class="ar-only">استفسارات واتساب</span>
+      <span class="en-only">WhatsApp Inquiries</span>
+    </a>
+  </div>
+</section>
+
+<!-- ========== COMMITTEES ========== -->
+<section class="content section-alt" id="contact">
+  <div class="section-inner">
+    <div class="section-head">
+      <div class="section-eyebrow">
+        <span class="ar-only">فريق العمل</span>
+        <span class="en-only">Organising Team</span>
+      </div>
+      <h2 class="section-title">
+        <span class="ar-only">لجان المؤتمر</span>
+        <span class="en-only">Conference Committees</span>
+      </h2>
+      <div class="section-rule"></div>
+    </div>
+
+    <div class="committees-grid">
+      <div class="committee-card">
+        <div class="committee-icon">I</div>
+        <div class="committee-name">
+          <span class="ar-only">اللجنة العلمية</span>
+          <span class="en-only">Scientific Committee</span>
+        </div>
+      </div>
+      <div class="committee-card">
+        <div class="committee-icon">II</div>
+        <div class="committee-name">
+          <span class="ar-only">اللجنة التحضيرية</span>
+          <span class="en-only">Organising Committee</span>
+        </div>
+      </div>
+      <div class="committee-card">
+        <div class="committee-icon">III</div>
+        <div class="committee-name">
+          <span class="ar-only">لجنة الاستقبال</span>
+          <span class="en-only">Reception Committee</span>
+        </div>
+      </div>
+      <div class="committee-card">
+        <div class="committee-icon">IV</div>
+        <div class="committee-name">
+          <span class="ar-only">اللجنة المالية</span>
+          <span class="en-only">Financial Committee</span>
+        </div>
+      </div>
+      <div class="committee-card">
+        <div class="committee-icon">V</div>
+        <div class="committee-name">
+          <span class="ar-only">اللجنة الإعلامية</span>
+          <span class="en-only">Media Committee</span>
+        </div>
+      </div>
+      <div class="committee-card">
+        <div class="committee-icon">VI</div>
+        <div class="committee-name">
+          <span class="ar-only">لجنة الاستلال</span>
+          <span class="en-only">Plagiarism / Verification Committee</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="chairs">
+      <div class="chair-item">
+        <div class="chair-role">
+          <span class="ar-only">رئيس اللجنة العلمية</span>
+          <span class="en-only">Chair of the Scientific Committee</span>
+        </div>
+        <div class="chair-phone"><a href="tel:+9647825248234">+964 782 524 8234</a></div>
+      </div>
+      <div class="chair-item">
+        <div class="chair-role">
+          <span class="ar-only">رئيس اللجنة التحضيرية</span>
+          <span class="en-only">Chair of the Organising Committee</span>
+        </div>
+        <div class="chair-phone"><a href="tel:+9647732400935">+964 773 240 0935</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-links">
+      <a href="https://cohe.uokerbala.edu.iq/wp" target="_blank">
+        <span class="ar-only">موقع الكلية</span>
+        <span class="en-only">College Website</span>
+      </a>
+      <a href="https://www.iasj.net/iasj/journal/176" target="_blank">
+        <span class="ar-only">مجلة الكلية</span>
+        <span class="en-only">Journal</span>
+      </a>
+      <a href="https://journals.uokerbala.edu.iq/index.php/bjh/conference" target="_blank">
+        <span class="ar-only">صفحة المؤتمر بالمجلة</span>
+        <span class="en-only">Conference Journal Page</span>
+      </a>
+    </div>
+
+    <div class="footer-partners">
+      <span class="ar-only">
+        بالتعاون مع:<br>
+        جامعة الحلة الأهلية — العراق &nbsp;·&nbsp; جامعة العين العراقية — العراق &nbsp;·&nbsp; كلية علوم الحاسوب وتكنولوجيا المعلومات — جامعة كربلاء
+      </span>
+      <span class="en-only">
+        In collaboration with:<br>
+        University of Hilla — Iraq &nbsp;·&nbsp; Al-Ayen University — Iraq &nbsp;·&nbsp; College of Computer Science and Information Technology — University of Kerbala
+      </span>
+    </div>
+
+    <div class="footer-copy">
+      <span class="ar-only">© 2026 كلية التربية للعلوم الإنسانية — جامعة كربلاء. جميع الحقوق محفوظة.</span>
+      <span class="en-only">© 2026 College of Education for the Humanities — University of Kerbala. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ============ LANGUAGE TOGGLE ============
+function toggleLang() {
+  const html = document.documentElement;
+  const isArabic = html.getAttribute('dir') === 'rtl';
+  if (isArabic) {
+    html.setAttribute('lang', 'en');
+    html.setAttribute('dir', 'ltr');
+    html.setAttribute('data-lang', 'en');
+    document.body.setAttribute('dir', 'ltr');
+  } else {
+    html.setAttribute('lang', 'ar');
+    html.setAttribute('dir', 'rtl');
+    html.setAttribute('data-lang', 'ar');
+    document.body.setAttribute('dir', 'rtl');
+  }
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// ============ MOBILE MENU ============
+function toggleMenu() {
+  document.getElementById('mainNav').classList.toggle('open');
+}
+
+// Close mobile menu when a link is clicked
+document.querySelectorAll('.main-nav a').forEach(link => {
+  link.addEventListener('click', () => {
+    document.getElementById('mainNav').classList.remove('open');
+  });
+});
+
+// ============ SMOOTH SCROLL FOR IN-PAGE LINKS ============
+// Intercepts all #anchor links so navigation works reliably inside
+// embedded viewers (like chat app previews) without touching the URL.
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', function(e) {
+    const href = this.getAttribute('href');
+    if (href === '#' || href.length < 2) return;
+    const target = document.querySelector(href);
+    if (target) {
+      e.preventDefault();
+      const offset = 70;
+      const y = target.getBoundingClientRect().top + window.pageYOffset - offset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+  });
+});
+
+
+</script>
+
+</body>
+</html>
