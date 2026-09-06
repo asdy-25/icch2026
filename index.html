@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>المؤتمر العلمي الدولي الخامس — الذكاء الاصطناعي وتطبيقاته في العلوم الإنسانية | 5th International Scientific Conference — AI and Its Applications in the Humanities</title>
-<meta name="description" content="المؤتمر العلمي الدولي الخامس لكلية التربية للعلوم الإنسانية — جامعة كربلاء | 15 أكتوبر 2026">
+<meta name="description" content="المؤتمر العلمي الدولي الخامس لكلية التربية للعلوم الإنسانية — جامعة كربلاء | 25 آذار 2027">
 <meta property="og:title" content="المؤتمر العلمي الدولي الخامس — الذكاء الاصطناعي وتطبيقاته في العلوم الإنسانية">
-<meta property="og:description" content="15 أكتوبر 2026 — كلية التربية للعلوم الإنسانية، جامعة كربلاء">
+<meta property="og:description" content="25 آذار 2027 — كلية التربية للعلوم الإنسانية، جامعة كربلاء">
 <meta property="og:type" content="website">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -592,9 +592,6 @@ body[dir="ltr"] .info-block h3 {
 /* ============ FEES ============ */
 .fees-table {
   width: 100%;
-  max-width: 880px;
-  margin-left: auto;
-  margin-right: auto;
   border-collapse: collapse;
   margin-top: 20px;
   background: var(--white);
@@ -606,14 +603,14 @@ body[dir="ltr"] .info-block h3 {
 .fees-table th {
   background: var(--green-deep);
   color: var(--cream);
-  padding: 14px 16px;
+  padding: 16px 22px;
   text-align: start;
   font-size: 14px;
   font-weight: 700;
 }
 
 .fees-table td {
-  padding: 14px 16px;
+  padding: 16px 22px;
   border-bottom: 1px solid var(--divider);
   font-size: 14px;
   color: var(--ink);
@@ -632,9 +629,6 @@ body[dir="ltr"] .info-block h3 {
 }
 
 .fees-note {
-  max-width: 880px;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 20px;
   padding: 16px 20px;
   background: var(--cream-warm);
@@ -996,6 +990,102 @@ body[dir="ltr"] .steps-label {
 .modal-close:hover { background: var(--green-deep); color: var(--cream); }
 body.modal-open { overflow: hidden; }
 
+/* ============ REVEAL CTA (section becomes button) ============ */
+.reveal-cta {
+  text-align: center;
+  padding: 20px 20px 10px;
+  margin-top: 20px;
+}
+.reveal-desc {
+  font-size: 16px;
+  color: var(--ink-soft);
+  margin-bottom: 26px;
+  max-width: 620px;
+  margin-inline: auto;
+  line-height: 1.7;
+}
+.reveal-btn {
+  padding: 15px 34px;
+  font-size: 15px;
+}
+
+/* ============ STACKED MODAL LIST ============ */
+.modal-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 24px;
+}
+.modal-list-item {
+  background: var(--white);
+  padding: 20px 22px;
+  border-radius: 4px;
+  border-inline-start: 3px solid var(--copper);
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+.modal-item-num {
+  font-family: 'Amiri', serif;
+  font-size: 28px;
+  color: var(--copper);
+  font-weight: 700;
+  line-height: 1;
+  flex-shrink: 0;
+  min-width: 34px;
+}
+.modal-item-text {
+  font-size: 15px;
+  color: var(--ink);
+  line-height: 1.7;
+  padding-top: 4px;
+}
+.modal-list-item.with-subtopics {
+  flex-direction: column;
+  gap: 12px;
+  border-inline-start-color: var(--green-deep);
+}
+.modal-item-header {
+  display: flex;
+  gap: 14px;
+  align-items: baseline;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--divider);
+  width: 100%;
+}
+.modal-item-title {
+  font-family: 'Amiri', serif;
+  font-size: 18px;
+  color: var(--green-deep);
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0;
+}
+body[dir="ltr"] .modal-item-title {
+  font-family: 'Cormorant Garamond', serif;
+}
+.modal-item-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.modal-item-list li {
+  font-size: 14px;
+  color: var(--ink-soft);
+  padding: 6px 0 6px 18px;
+  position: relative;
+  line-height: 1.6;
+}
+body[dir="rtl"] .modal-item-list li { padding: 6px 18px 6px 0; }
+.modal-item-list li::before {
+  content: "◆";
+  position: absolute;
+  inset-inline-start: 0;
+  color: var(--copper);
+  font-size: 8px;
+  top: 13px;
+}
+
 /* ============ LANG VISIBILITY ============ */
 .ar-only { display: block; }
 .en-only { display: none; }
@@ -1068,13 +1158,13 @@ span.ar-only, span.en-only { display: inline; }
     <div class="hero-meta">
       <div class="hero-meta-item">
         <strong><span class="ar-only">تاريخ الانعقاد</span><span class="en-only">CONFERENCE DATE</span></strong>
-        <span class="ar-only">الخميس 15 / 10 / 2026</span>
-        <span class="en-only">Thursday, October 15, 2026</span>
+        <span class="ar-only">الخميس 25 / 3 / 2027</span>
+        <span class="en-only">Thursday, March 25, 2027</span>
       </div>
       <div class="hero-meta-item">
         <strong><span class="ar-only">آخر موعد للبحوث</span><span class="en-only">SUBMISSION DEADLINE</span></strong>
-        <span class="ar-only">1 / 10 / 2026</span>
-        <span class="en-only">October 1, 2026</span>
+        <span class="ar-only">10 / 3 / 2027</span>
+        <span class="en-only">March 10, 2027</span>
       </div>
       <div class="hero-meta-item">
         <strong><span class="ar-only">صيغة الانعقاد</span><span class="en-only">FORMAT</span></strong>
@@ -1180,42 +1270,15 @@ span.ar-only, span.en-only { display: inline; }
       </h2>
       <div class="section-rule"></div>
     </div>
-    <div class="objectives-grid">
-      <div class="objective-card">
-        <div class="objective-num">I</div>
-        <div class="objective-text">
-          <span class="ar-only">إبراز أثر الذكاء الاصطناعي في تطوير العلوم الإنسانية</span>
-          <span class="en-only">Highlighting the impact of artificial intelligence on the development of the Humanities</span>
-        </div>
-      </div>
-      <div class="objective-card">
-        <div class="objective-num">II</div>
-        <div class="objective-text">
-          <span class="ar-only">تبادل الخبرات بين الباحثين في المجالات الأكاديمية والتقنية</span>
-          <span class="en-only">Exchanging expertise among researchers in academic and technological fields</span>
-        </div>
-      </div>
-      <div class="objective-card">
-        <div class="objective-num">III</div>
-        <div class="objective-text">
-          <span class="ar-only">تشجيع البحوث متعددة التخصصات في ميدان الذكاء الاصطناعي</span>
-          <span class="en-only">Encouraging interdisciplinary research in the field of artificial intelligence</span>
-        </div>
-      </div>
-      <div class="objective-card">
-        <div class="objective-num">IV</div>
-        <div class="objective-text">
-          <span class="ar-only">تسليط الضوء على التحديات الأخلاقية والمعرفية في العصر الرقمي</span>
-          <span class="en-only">Shedding light on ethical and epistemological challenges in the digital age</span>
-        </div>
-      </div>
-      <div class="objective-card">
-        <div class="objective-num">V</div>
-        <div class="objective-text">
-          <span class="ar-only">دعم مسيرة التعليم والبحث العلمي باستخدام الذكاء الاصطناعي</span>
-          <span class="en-only">Advancing education and scientific research through utilising artificial intelligence</span>
-        </div>
-      </div>
+    <div class="reveal-cta">
+      <p class="reveal-desc">
+        <span class="ar-only">خمسة أهداف رئيسية يسعى المؤتمر إلى تحقيقها لدعم حضور الذكاء الاصطناعي في العلوم الإنسانية.</span>
+        <span class="en-only">Five key objectives the conference aims to achieve to strengthen the presence of AI in the Humanities.</span>
+      </p>
+      <button type="button" class="btn btn-primary reveal-btn" data-modal="objectivesModal">
+        <span class="ar-only">عرض الأهداف الخمسة</span>
+        <span class="en-only">View the Five Objectives</span>
+      </button>
     </div>
   </div>
 </section>
@@ -1234,130 +1297,15 @@ span.ar-only, span.en-only { display: inline; }
       </h2>
       <div class="section-rule"></div>
     </div>
-    <div class="themes-grid">
-
-      <div class="theme-card">
-        <div class="theme-header">
-          <div class="theme-num">I</div>
-          <div class="theme-title">
-            <span class="ar-only">تطبيقات الذكاء الاصطناعي في اللغة الإنجليزية</span>
-            <span class="en-only">AI Applications in English Language Studies</span>
-          </div>
-        </div>
-        <ul class="theme-list ar-only">
-          <li>الذكاء الاصطناعي في تعليم اللغة الإنجليزية للناطقين بغيرها</li>
-          <li>استخدام الذكاء الاصطناعي في الترجمة الآلية والتحليل النصي</li>
-          <li>تطوير الاختبارات الإلكترونية المعتمدة على الذكاء الاصطناعي</li>
-          <li>تحليل الخطاب والتفاعل اللغوي باستخدام الذكاء الاصطناعي</li>
-          <li>بناء مناهج تعليمية تفاعلية قائمة على الذكاء الاصطناعي</li>
-        </ul>
-        <ul class="theme-list en-only">
-          <li>AI in teaching English as a foreign language</li>
-          <li>AI employment in machine translation and text analysis</li>
-          <li>Developing AI-based electronic testing systems</li>
-          <li>Discourse analysis and linguistic interaction using AI</li>
-          <li>Designing interactive, AI-supported instructional curricula</li>
-        </ul>
-      </div>
-
-      <div class="theme-card">
-        <div class="theme-header">
-          <div class="theme-num">II</div>
-          <div class="theme-title">
-            <span class="ar-only">تطبيقات الذكاء الاصطناعي في العلوم التربوية والنفسية</span>
-            <span class="en-only">AI Applications in Educational and Psychological Sciences</span>
-          </div>
-        </div>
-        <ul class="theme-list ar-only">
-          <li>توظيف الذكاء الاصطناعي في تطوير المناهج وطرائق التدريس</li>
-          <li>استخدام الذكاء الاصطناعي في تشخيص المشكلات التعليمية والنفسية</li>
-          <li>الذكاء الاصطناعي في إدارة الصفوف الذكية وتحليل سلوك الطلبة</li>
-          <li>تطوير أدوات القياس النفسي والتربوي بمساعدة الذكاء الاصطناعي</li>
-          <li>الذكاء الاصطناعي في التعليم الدامج وخدمة الطلبة ذوي الاحتياجات الخاصة</li>
-        </ul>
-        <ul class="theme-list en-only">
-          <li>Employing AI in curriculum development and teaching methodologies</li>
-          <li>Using AI to diagnose educational and psychological difficulties</li>
-          <li>AI in managing smart classrooms and analysing student behaviour</li>
-          <li>Developing psychological and educational measurement tools with AI support</li>
-          <li>AI as a tool in inclusive education and in serving students with disabilities</li>
-        </ul>
-      </div>
-
-      <div class="theme-card">
-        <div class="theme-header">
-          <div class="theme-num">III</div>
-          <div class="theme-title">
-            <span class="ar-only">تطبيقات الذكاء الاصطناعي في الجغرافية التطبيقية</span>
-            <span class="en-only">AI Applications in Applied Geography</span>
-          </div>
-        </div>
-        <ul class="theme-list ar-only">
-          <li>الذكاء الاصطناعي في تحليل البيانات المكانية والاستشعار عن بُعد</li>
-          <li>التنبؤ بالكوارث الطبيعية عبر خوارزميات الذكاء الاصطناعي</li>
-          <li>استخدام الذكاء الاصطناعي في التخطيط الحضري والبيئي</li>
-          <li>الذكاء الاصطناعي في نظم المعلومات الجغرافية (GIS)</li>
-          <li>تحليل التغيرات المناخية بالاعتماد على تقنيات الذكاء الاصطناعي</li>
-        </ul>
-        <ul class="theme-list en-only">
-          <li>AI in spatial data analysis and remote sensing</li>
-          <li>Predicting natural disasters through AI algorithms</li>
-          <li>Using AI in urban and environmental planning</li>
-          <li>AI in Geographic Information Systems (GIS)</li>
-          <li>Analysing climate change using AI technologies</li>
-        </ul>
-      </div>
-
-      <div class="theme-card">
-        <div class="theme-header">
-          <div class="theme-num">IV</div>
-          <div class="theme-title">
-            <span class="ar-only">تطبيقات الذكاء الاصطناعي في اللغة العربية</span>
-            <span class="en-only">AI Applications in Arabic Language Studies</span>
-          </div>
-        </div>
-        <ul class="theme-list ar-only">
-          <li>الذكاء الاصطناعي في تعليم اللغة العربية للناطقين بغيرها</li>
-          <li>الذكاء الاصطناعي في الترجمة الآلية ومعالجة اللغة العربية طبيعياً</li>
-          <li>تطوير أدوات التدقيق اللغوي والكتابة الذكية باللغة العربية</li>
-          <li>الذكاء الاصطناعي في حفظ التراث اللغوي والأدبي العربي</li>
-          <li>تعزيز الهوية الثقافية العربية في عصر الذكاء الاصطناعي</li>
-        </ul>
-        <ul class="theme-list en-only">
-          <li>AI in teaching Arabic to non-native speakers</li>
-          <li>AI in machine translation and Natural Language Processing (NLP) for Arabic</li>
-          <li>Developing Arabic intelligent writing tools and proofreading systems</li>
-          <li>AI in preserving Arabic linguistic and literary heritage</li>
-          <li>Enhancing Arab cultural identity in the era of AI</li>
-        </ul>
-      </div>
-
-      <div class="theme-card">
-        <div class="theme-header">
-          <div class="theme-num">V</div>
-          <div class="theme-title">
-            <span class="ar-only">تطبيقات الذكاء الاصطناعي في التاريخ</span>
-            <span class="en-only">AI Applications in History</span>
-          </div>
-        </div>
-        <ul class="theme-list ar-only">
-          <li>استخدام الذكاء الاصطناعي في أرشفة ورقمنة المخطوطات والوثائق التاريخية</li>
-          <li>إعادة بناء الأحداث والمواقع التاريخية وفق صور ثلاثية الأبعاد باستخدام الذكاء الاصطناعي</li>
-          <li>استخدام الذكاء الاصطناعي في تحليل النصوص التاريخية</li>
-          <li>الاستفادة من الذكاء الاصطناعي في كشف التزوير في المخطوطات والوثائق التاريخية</li>
-          <li>استخدام الواقع الافتراضي المدعوم بالذكاء الاصطناعي لإعادة تصور المدن التاريخية</li>
-          <li>نمذجة الشخصيات التاريخية باستخدام الذكاء الاصطناعي لإعادة بناء السلوكيات أو الحوارات المحتملة</li>
-        </ul>
-        <ul class="theme-list en-only">
-          <li>Using AI to archive and digitise manuscripts and historical documents</li>
-          <li>Reconstructing historical events and sites through AI-generated 3D imagery</li>
-          <li>Applying AI in the analysis of historical texts</li>
-          <li>Using AI to detect forgery in manuscripts and historical documents</li>
-          <li>Employing AI-supported virtual reality to reimagine historical cities</li>
-          <li>Modelling historical figures with AI to recreate possible behaviours or dialogues</li>
-        </ul>
-      </div>
-
+    <div class="reveal-cta">
+      <p class="reveal-desc">
+        <span class="ar-only">خمسة محاور بحثية تغطي تطبيقات الذكاء الاصطناعي في اللغات والعلوم التربوية والنفسية والجغرافية والتاريخ.</span>
+        <span class="en-only">Five research themes covering AI applications in languages, educational and psychological sciences, geography, and history.</span>
+      </p>
+      <button type="button" class="btn btn-primary reveal-btn" data-modal="themesModal">
+        <span class="ar-only">عرض المحاور البحثية</span>
+        <span class="en-only">View Research Themes</span>
+      </button>
     </div>
   </div>
 </section>
@@ -1412,37 +1360,26 @@ span.ar-only, span.en-only { display: inline; }
         <div class="timeline">
           <div class="timeline-item">
             <div class="timeline-date">
-              <div class="day">15</div>
-              <div class="month"><span class="ar-only">آب</span><span class="en-only">Aug</span></div>
-            </div>
-            <div class="timeline-text">
-              <span class="ar-only">بدء تقديم البحوث</span>
-              <span class="en-only">Submission of papers begins</span>
-              <br><small style="color:var(--ink-soft);font-weight:400">2026</small>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-date">
-              <div class="day">01</div>
-              <div class="month"><span class="ar-only">تشرين ١</span><span class="en-only">Oct</span></div>
+              <div class="day">10</div>
+              <div class="month"><span class="ar-only">آذار</span><span class="en-only">Mar</span></div>
             </div>
             <div class="timeline-text">
               <span class="ar-only">آخر موعد لاستلام البحوث</span>
               <span class="en-only">Deadline for receiving papers</span>
-              <br><small style="color:var(--ink-soft);font-weight:400">2026</small>
+              <br><small style="color:var(--ink-soft);font-weight:400">2027</small>
             </div>
           </div>
           <div class="timeline-item">
             <div class="timeline-date" style="background:var(--copper);">
-              <div class="day">15</div>
-              <div class="month"><span class="ar-only">تشرين ١</span><span class="en-only">Oct</span></div>
+              <div class="day">25</div>
+              <div class="month"><span class="ar-only">آذار</span><span class="en-only">Mar</span></div>
             </div>
             <div class="timeline-text">
               <strong style="color:var(--green-deep);">
                 <span class="ar-only">انعقاد المؤتمر — الخميس</span>
                 <span class="en-only">Conference Date — Thursday</span>
               </strong>
-              <br><small style="color:var(--ink-soft);font-weight:400">2026</small>
+              <br><small style="color:var(--ink-soft);font-weight:400">2027</small>
             </div>
           </div>
         </div>
@@ -1572,8 +1509,8 @@ span.ar-only, span.en-only { display: inline; }
     <span class="en-only">Ready to Participate?</span>
   </h2>
   <p class="cta-text">
-    <span class="ar-only">آخر موعد لاستلام البحوث 1 / 10 / 2026</span>
-    <span class="en-only">Submission deadline: October 1, 2026</span>
+    <span class="ar-only">آخر موعد لاستلام البحوث 10 / 3 / 2027</span>
+    <span class="en-only">Submission deadline: March 10, 2027</span>
   </p>
 
   <div class="steps-box">
@@ -1611,7 +1548,7 @@ span.ar-only, span.en-only { display: inline; }
       <span class="ar-only">تقديم البحث عبر المجلة</span>
       <span class="en-only">Submit via Journal Portal</span>
     </a>
-    <a href="#" class="btn btn-outline" id="paymentBtn">
+    <a href="#" class="btn btn-outline" data-modal="paymentModal">
       <span class="ar-only">طرق الدفع</span>
       <span class="en-only">Payment Methods</span>
     </a>
@@ -1737,10 +1674,198 @@ span.ar-only, span.en-only { display: inline; }
   </div>
 </footer>
 
+<!-- ========== OBJECTIVES MODAL ========== -->
+<div class="modal-overlay" id="objectivesModal">
+  <div class="modal-content">
+    <button class="modal-close" aria-label="Close">✕</button>
+
+    <h3 class="payment-heading" style="margin-top:0;">
+      <span class="ar-only">أهداف المؤتمر</span>
+      <span class="en-only">Conference Objectives</span>
+    </h3>
+
+    <div class="modal-list">
+      <div class="modal-list-item">
+        <span class="modal-item-num">I</span>
+        <div class="modal-item-text">
+          <span class="ar-only">إبراز أثر الذكاء الاصطناعي في تطوير العلوم الإنسانية.</span>
+          <span class="en-only">Highlighting the impact of artificial intelligence on the development of the Humanities.</span>
+        </div>
+      </div>
+      <div class="modal-list-item">
+        <span class="modal-item-num">II</span>
+        <div class="modal-item-text">
+          <span class="ar-only">تبادل الخبرات بين الباحثين في المجالات الأكاديمية والتقنية.</span>
+          <span class="en-only">Exchanging expertise among researchers in academic and technological fields.</span>
+        </div>
+      </div>
+      <div class="modal-list-item">
+        <span class="modal-item-num">III</span>
+        <div class="modal-item-text">
+          <span class="ar-only">تشجيع البحوث متعددة التخصصات في ميدان الذكاء الاصطناعي.</span>
+          <span class="en-only">Encouraging interdisciplinary research in the field of artificial intelligence.</span>
+        </div>
+      </div>
+      <div class="modal-list-item">
+        <span class="modal-item-num">IV</span>
+        <div class="modal-item-text">
+          <span class="ar-only">تسليط الضوء على التحديات الأخلاقية والمعرفية في العصر الرقمي.</span>
+          <span class="en-only">Shedding light on ethical and epistemological challenges in the digital age.</span>
+        </div>
+      </div>
+      <div class="modal-list-item">
+        <span class="modal-item-num">V</span>
+        <div class="modal-item-text">
+          <span class="ar-only">دعم مسيرة التعليم والبحث العلمي باستخدام الذكاء الاصطناعي.</span>
+          <span class="en-only">Advancing education and scientific research through utilising artificial intelligence.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ========== THEMES MODAL ========== -->
+<div class="modal-overlay" id="themesModal">
+  <div class="modal-content">
+    <button class="modal-close" aria-label="Close">✕</button>
+
+    <h3 class="payment-heading" style="margin-top:0;">
+      <span class="ar-only">محاور المؤتمر</span>
+      <span class="en-only">Conference Themes</span>
+    </h3>
+
+    <div class="modal-list">
+
+      <div class="modal-list-item with-subtopics">
+        <div class="modal-item-header">
+          <span class="modal-item-num">I</span>
+          <h4 class="modal-item-title">
+            <span class="ar-only">تطبيقات الذكاء الاصطناعي في اللغة الإنجليزية</span>
+            <span class="en-only">AI Applications in English Language Studies</span>
+          </h4>
+        </div>
+        <ul class="modal-item-list ar-only">
+          <li>الذكاء الاصطناعي في تعليم اللغة الإنجليزية للناطقين بغيرها</li>
+          <li>استخدام الذكاء الاصطناعي في الترجمة الآلية والتحليل النصي</li>
+          <li>تطوير الاختبارات الإلكترونية المعتمدة على الذكاء الاصطناعي</li>
+          <li>تحليل الخطاب والتفاعل اللغوي باستخدام الذكاء الاصطناعي</li>
+          <li>بناء مناهج تعليمية تفاعلية قائمة على الذكاء الاصطناعي</li>
+        </ul>
+        <ul class="modal-item-list en-only">
+          <li>AI in teaching English as a foreign language</li>
+          <li>AI employment in machine translation and text analysis</li>
+          <li>Developing AI-based electronic testing systems</li>
+          <li>Discourse analysis and linguistic interaction using AI</li>
+          <li>Designing interactive, AI-supported instructional curricula</li>
+        </ul>
+      </div>
+
+      <div class="modal-list-item with-subtopics">
+        <div class="modal-item-header">
+          <span class="modal-item-num">II</span>
+          <h4 class="modal-item-title">
+            <span class="ar-only">تطبيقات الذكاء الاصطناعي في العلوم التربوية والنفسية</span>
+            <span class="en-only">AI Applications in Educational and Psychological Sciences</span>
+          </h4>
+        </div>
+        <ul class="modal-item-list ar-only">
+          <li>توظيف الذكاء الاصطناعي في تطوير المناهج وطرائق التدريس</li>
+          <li>استخدام الذكاء الاصطناعي في تشخيص المشكلات التعليمية والنفسية</li>
+          <li>الذكاء الاصطناعي في إدارة الصفوف الذكية وتحليل سلوك الطلبة</li>
+          <li>تطوير أدوات القياس النفسي والتربوي بمساعدة الذكاء الاصطناعي</li>
+          <li>الذكاء الاصطناعي في التعليم الدامج وخدمة الطلبة ذوي الاحتياجات الخاصة</li>
+        </ul>
+        <ul class="modal-item-list en-only">
+          <li>Employing AI in curriculum development and teaching methodologies</li>
+          <li>Using AI to diagnose educational and psychological difficulties</li>
+          <li>AI in managing smart classrooms and analysing student behaviour</li>
+          <li>Developing psychological and educational measurement tools with AI support</li>
+          <li>AI as a tool in inclusive education and in serving students with disabilities</li>
+        </ul>
+      </div>
+
+      <div class="modal-list-item with-subtopics">
+        <div class="modal-item-header">
+          <span class="modal-item-num">III</span>
+          <h4 class="modal-item-title">
+            <span class="ar-only">تطبيقات الذكاء الاصطناعي في الجغرافية التطبيقية</span>
+            <span class="en-only">AI Applications in Applied Geography</span>
+          </h4>
+        </div>
+        <ul class="modal-item-list ar-only">
+          <li>الذكاء الاصطناعي في تحليل البيانات المكانية والاستشعار عن بُعد</li>
+          <li>التنبؤ بالكوارث الطبيعية عبر خوارزميات الذكاء الاصطناعي</li>
+          <li>استخدام الذكاء الاصطناعي في التخطيط الحضري والبيئي</li>
+          <li>الذكاء الاصطناعي في نظم المعلومات الجغرافية (GIS)</li>
+          <li>تحليل التغيرات المناخية بالاعتماد على تقنيات الذكاء الاصطناعي</li>
+        </ul>
+        <ul class="modal-item-list en-only">
+          <li>AI in spatial data analysis and remote sensing</li>
+          <li>Predicting natural disasters through AI algorithms</li>
+          <li>Using AI in urban and environmental planning</li>
+          <li>AI in Geographic Information Systems (GIS)</li>
+          <li>Analysing climate change using AI technologies</li>
+        </ul>
+      </div>
+
+      <div class="modal-list-item with-subtopics">
+        <div class="modal-item-header">
+          <span class="modal-item-num">IV</span>
+          <h4 class="modal-item-title">
+            <span class="ar-only">تطبيقات الذكاء الاصطناعي في اللغة العربية</span>
+            <span class="en-only">AI Applications in Arabic Language Studies</span>
+          </h4>
+        </div>
+        <ul class="modal-item-list ar-only">
+          <li>الذكاء الاصطناعي في تعليم اللغة العربية للناطقين بغيرها</li>
+          <li>الذكاء الاصطناعي في الترجمة الآلية ومعالجة اللغة العربية طبيعياً</li>
+          <li>تطوير أدوات التدقيق اللغوي والكتابة الذكية باللغة العربية</li>
+          <li>الذكاء الاصطناعي في حفظ التراث اللغوي والأدبي العربي</li>
+          <li>تعزيز الهوية الثقافية العربية في عصر الذكاء الاصطناعي</li>
+        </ul>
+        <ul class="modal-item-list en-only">
+          <li>AI in teaching Arabic to non-native speakers</li>
+          <li>AI in machine translation and Natural Language Processing (NLP) for Arabic</li>
+          <li>Developing Arabic intelligent writing tools and proofreading systems</li>
+          <li>AI in preserving Arabic linguistic and literary heritage</li>
+          <li>Enhancing Arab cultural identity in the era of AI</li>
+        </ul>
+      </div>
+
+      <div class="modal-list-item with-subtopics">
+        <div class="modal-item-header">
+          <span class="modal-item-num">V</span>
+          <h4 class="modal-item-title">
+            <span class="ar-only">تطبيقات الذكاء الاصطناعي في التاريخ</span>
+            <span class="en-only">AI Applications in History</span>
+          </h4>
+        </div>
+        <ul class="modal-item-list ar-only">
+          <li>استخدام الذكاء الاصطناعي في أرشفة ورقمنة المخطوطات والوثائق التاريخية</li>
+          <li>إعادة بناء الأحداث والمواقع التاريخية وفق صور ثلاثية الأبعاد باستخدام الذكاء الاصطناعي</li>
+          <li>استخدام الذكاء الاصطناعي في تحليل النصوص التاريخية</li>
+          <li>الاستفادة من الذكاء الاصطناعي في كشف التزوير في المخطوطات والوثائق التاريخية</li>
+          <li>استخدام الواقع الافتراضي المدعوم بالذكاء الاصطناعي لإعادة تصور المدن التاريخية</li>
+          <li>نمذجة الشخصيات التاريخية باستخدام الذكاء الاصطناعي لإعادة بناء السلوكيات أو الحوارات المحتملة</li>
+        </ul>
+        <ul class="modal-item-list en-only">
+          <li>Using AI to archive and digitise manuscripts and historical documents</li>
+          <li>Reconstructing historical events and sites through AI-generated 3D imagery</li>
+          <li>Applying AI in the analysis of historical texts</li>
+          <li>Using AI to detect forgery in manuscripts and historical documents</li>
+          <li>Employing AI-supported virtual reality to reimagine historical cities</li>
+          <li>Modelling historical figures with AI to recreate possible behaviours or dialogues</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</div>
+
 <!-- ========== PAYMENT MODAL ========== -->
 <div class="modal-overlay" id="paymentModal">
   <div class="modal-content">
-    <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
+    <button class="modal-close" aria-label="Close">✕</button>
 
     <h3 class="payment-heading" style="margin-top:0;">
       <span class="ar-only">طرق دفع الأجور</span>
@@ -1822,30 +1947,37 @@ document.querySelectorAll('.main-nav a').forEach(link => {
   });
 });
 
-// ============ PAYMENT MODAL ============
-const paymentModal = document.getElementById('paymentModal');
-const paymentBtn = document.getElementById('paymentBtn');
-const modalClose = document.getElementById('modalClose');
-
-function openPaymentModal(e) {
-  if (e) e.preventDefault();
-  paymentModal.classList.add('open');
+// ============ MODAL SYSTEM ============
+// Any element with data-modal="modalId" opens that modal.
+// Any .modal-close button, click on overlay, or Escape key closes all modals.
+function openModal(id) {
+  const modal = document.getElementById(id);
+  if (!modal) return;
+  modal.classList.add('open');
   document.body.classList.add('modal-open');
+  modal.scrollTop = 0;
 }
-function closePaymentModal() {
-  paymentModal.classList.remove('open');
+function closeAllModals() {
+  document.querySelectorAll('.modal-overlay.open').forEach(m => m.classList.remove('open'));
   document.body.classList.remove('modal-open');
 }
 
-if (paymentBtn) paymentBtn.addEventListener('click', openPaymentModal);
-if (modalClose) modalClose.addEventListener('click', closePaymentModal);
-if (paymentModal) {
-  paymentModal.addEventListener('click', function(e) {
-    if (e.target === paymentModal) closePaymentModal();
+document.querySelectorAll('[data-modal]').forEach(btn => {
+  btn.addEventListener('click', function(e) {
+    e.preventDefault();
+    openModal(this.dataset.modal);
   });
-}
+});
+document.querySelectorAll('.modal-close').forEach(btn => {
+  btn.addEventListener('click', closeAllModals);
+});
+document.querySelectorAll('.modal-overlay').forEach(overlay => {
+  overlay.addEventListener('click', function(e) {
+    if (e.target === overlay) closeAllModals();
+  });
+});
 document.addEventListener('keydown', function(e) {
-  if (e.key === 'Escape') closePaymentModal();
+  if (e.key === 'Escape') closeAllModals();
 });
 
 // ============ SMOOTH SCROLL FOR IN-PAGE LINKS ============
