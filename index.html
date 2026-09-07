@@ -590,10 +590,14 @@ body[dir="ltr"] .info-block h3 {
 }
 
 /* ============ FEES ============ */
+.fees-wrapper {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
 .fees-table {
   width: 100%;
-  max-width: 1200px;
-  margin: 20px auto 0;
   border-collapse: collapse;
   background: var(--cream);
   border-radius: 4px;
@@ -630,8 +634,7 @@ body[dir="ltr"] .info-block h3 {
 }
 
 .fees-note {
-  max-width: 1200px;
-  margin: 20px auto 0;
+  margin-top: 20px;
   padding: 16px 20px;
   background: var(--cream-warm);
   border-inline-start: 3px solid var(--copper);
@@ -1406,6 +1409,8 @@ span.ar-only, span.en-only { display: inline; }
       <div class="section-rule"></div>
     </div>
 
+    <div class="fees-wrapper">
+
     <table class="fees-table ar-only">
       <thead>
         <tr>
@@ -1500,6 +1505,8 @@ span.ar-only, span.en-only { display: inline; }
       • The first author will receive the conference bag, a copy of the abstract book, and a certificate of participation.<br>
       • The conference does not cover travel expenses for participants from outside Iraq.
     </div>
+
+    </div><!-- /.fees-wrapper -->
 
   </div>
 </section>
