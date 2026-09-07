@@ -590,11 +590,19 @@ body[dir="ltr"] .info-block h3 {
 }
 
 /* ============ FEES ============ */
+#fees .section-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#fees .section-head {
+  width: 100%;
+}
 .fees-wrapper {
+  width: 100%;
   max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 20px;
+  box-sizing: border-box;
 }
 .fees-table {
   width: 100%;
