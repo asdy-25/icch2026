@@ -591,27 +591,31 @@ body[dir="ltr"] .info-block h3 {
 
 /* ============ FEES ============ */
 #fees .section-inner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#fees .section-head {
-  width: 100%;
+  display: block !important;
+  text-align: initial !important;
 }
 .fees-wrapper {
-  width: 100%;
-  max-width: 1200px;
-  margin-top: 20px;
-  box-sizing: border-box;
+  display: block !important;
+  max-width: 1200px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-top: 20px !important;
+  box-sizing: border-box !important;
 }
 .fees-table {
-  width: 100%;
-  border-collapse: collapse;
-  background: var(--cream);
-  border-radius: 4px;
-  overflow: hidden;
-  border: 1px solid var(--divider);
+  width: 100% !important;
+  table-layout: fixed !important;
+  border-collapse: collapse !important;
+  background: var(--cream) !important;
+  border: 1px solid var(--divider) !important;
 }
+
+.fees-table th:first-child,
+.fees-table td:first-child { width: 55% !important; }
+.fees-table th:nth-child(2),
+.fees-table td:nth-child(2) { width: 22.5% !important; }
+.fees-table th:nth-child(3),
+.fees-table td:nth-child(3) { width: 22.5% !important; }
 
 .fees-table th {
   background: var(--green-deep);
