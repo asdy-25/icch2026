@@ -54,27 +54,59 @@ body[dir="ltr"] {
   padding: 8px 20px;
   font-size: 13px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  text-align: center;
   flex-wrap: wrap;
   gap: 10px;
 }
 
-.top-bar .location { opacity: 0.85; }
+.top-bar .location { opacity: 0.9; }
 
 .lang-toggle {
   background: var(--copper);
   color: var(--white);
   border: none;
-  padding: 6px 16px;
-  border-radius: 4px;
+  padding: 9px 18px;
+  border-radius: 22px;
   cursor: pointer;
   font-family: inherit;
-  font-weight: 600;
-  font-size: 13px;
-  transition: background 0.2s;
+  font-weight: 700;
+  font-size: 14px;
+  transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 3px 10px rgba(200, 148, 84, 0.45);
+  animation: langAttn 1.6s ease-in-out 4;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
-.lang-toggle:hover { background: var(--copper-light); }
+.lang-toggle:hover {
+  background: var(--copper-light);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(200, 148, 84, 0.6);
+  animation: none;
+}
+.lang-globe {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+@keyframes langAttn {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 3px 10px rgba(200, 148, 84, 0.45);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 6px 22px rgba(200, 148, 84, 0.8);
+  }
+}
+@media (max-width: 500px) {
+  .lang-toggle { padding: 7px 13px; font-size: 13px; }
+  .lang-globe { width: 14px; height: 14px; }
+}
 
 .nav-header {
   background: var(--white);
@@ -1124,10 +1156,6 @@ span.ar-only, span.en-only { display: inline; }
     <span class="ar-only">🇮🇶 كلية التربية للعلوم الإنسانية — جامعة كربلاء</span>
     <span class="en-only">🇮🇶 College of Education for the Humanities — University of Kerbala</span>
   </span>
-  <button class="lang-toggle" onclick="toggleLang()">
-    <span class="ar-only">English</span>
-    <span class="en-only">العربية</span>
-  </button>
 </div>
 
 <!-- ========== NAV HEADER ========== -->
@@ -1153,6 +1181,15 @@ span.ar-only, span.en-only { display: inline; }
       <a href="#submit"><span class="ar-only">التسجيل</span><span class="en-only">Register</span></a>
       <a href="#contact"><span class="ar-only">التواصل</span><span class="en-only">Contact</span></a>
     </nav>
+    <button class="lang-toggle" onclick="toggleLang()" aria-label="Change language">
+      <svg class="lang-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"/>
+        <path d="M2 12h20"/>
+        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+      </svg>
+      <span class="ar-only">English</span>
+      <span class="en-only">العربية</span>
+    </button>
     <button class="menu-toggle" onclick="toggleMenu()" aria-label="menu">☰</button>
   </div>
 </header>
