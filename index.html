@@ -1293,7 +1293,7 @@ span.ar-only, span.en-only { display: inline; }
         <span class="ar-only">خمسة أهداف رئيسية يسعى المؤتمر إلى تحقيقها لدعم حضور الذكاء الاصطناعي في العلوم الإنسانية.</span>
         <span class="en-only">Five key objectives the conference aims to achieve to strengthen the presence of AI in the Humanities.</span>
       </p>
-      <button type="button" class="btn btn-primary reveal-btn" data-modal="objectivesModal">
+      <button type="button" class="btn btn-primary reveal-btn" data-modal="objectivesModal" onclick="openModal('objectivesModal')">
         <span class="ar-only">عرض الأهداف الخمسة</span>
         <span class="en-only">View the Five Objectives</span>
       </button>
@@ -1320,7 +1320,7 @@ span.ar-only, span.en-only { display: inline; }
         <span class="ar-only">خمسة محاور بحثية تغطي تطبيقات الذكاء الاصطناعي في اللغات والعلوم التربوية والنفسية والجغرافية والتاريخ.</span>
         <span class="en-only">Five research themes covering AI applications in languages, educational and psychological sciences, geography, and history.</span>
       </p>
-      <button type="button" class="btn btn-primary reveal-btn" data-modal="themesModal">
+      <button type="button" class="btn btn-primary reveal-btn" data-modal="themesModal" onclick="openModal('themesModal')">
         <span class="ar-only">عرض المحاور البحثية</span>
         <span class="en-only">View Research Themes</span>
       </button>
@@ -1546,7 +1546,7 @@ span.ar-only, span.en-only { display: inline; }
       <span class="ar-only">تقديم البحث عبر المجلة</span>
       <span class="en-only">Submit via Journal Portal</span>
     </a>
-    <a href="#" class="btn btn-outline" data-modal="paymentModal">
+    <a href="#" class="btn btn-outline" data-modal="paymentModal" onclick="openModal('paymentModal'); return false;">
       <span class="ar-only">طرق الدفع</span>
       <span class="en-only">Payment Methods</span>
     </a>
@@ -1675,7 +1675,7 @@ span.ar-only, span.en-only { display: inline; }
 <!-- ========== OBJECTIVES MODAL ========== -->
 <div class="modal-overlay" id="objectivesModal">
   <div class="modal-content">
-    <button class="modal-close" aria-label="Close">✕</button>
+    <button class="modal-close" aria-label="Close" onclick="closeAllModals()">✕</button>
 
     <h3 class="payment-heading" style="margin-top:0;">
       <span class="ar-only">أهداف المؤتمر</span>
@@ -1725,7 +1725,7 @@ span.ar-only, span.en-only { display: inline; }
 <!-- ========== THEMES MODAL ========== -->
 <div class="modal-overlay" id="themesModal">
   <div class="modal-content">
-    <button class="modal-close" aria-label="Close">✕</button>
+    <button class="modal-close" aria-label="Close" onclick="closeAllModals()">✕</button>
 
     <h3 class="payment-heading" style="margin-top:0;">
       <span class="ar-only">محاور المؤتمر</span>
@@ -1863,7 +1863,7 @@ span.ar-only, span.en-only { display: inline; }
 <!-- ========== PAYMENT MODAL ========== -->
 <div class="modal-overlay" id="paymentModal">
   <div class="modal-content">
-    <button class="modal-close" aria-label="Close">✕</button>
+    <button class="modal-close" aria-label="Close" onclick="closeAllModals()">✕</button>
 
     <h3 class="payment-heading" style="margin-top:0;">
       <span class="ar-only">طرق دفع الأجور</span>
@@ -1981,4 +1981,22 @@ document.addEventListener('keydown', function(e) {
 // ============ SMOOTH SCROLL FOR IN-PAGE LINKS ============
 // Intercepts all #anchor links so navigation works reliably inside
 // embedded viewers (like chat app previews) without touching the URL.
-document.qu
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', function(e) {
+    const href = this.getAttribute('href');
+    if (href === '#' || href.length < 2) return;
+    const target = document.querySelector(href);
+    if (target) {
+      e.preventDefault();
+      const offset = 70;
+      const y = target.getBoundingClientRect().top + window.pageYOffset - offset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+  });
+});
+
+
+</script>
+
+</body>
+</html>
