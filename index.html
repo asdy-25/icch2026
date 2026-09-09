@@ -611,6 +611,11 @@ body[dir="ltr"] .info-block h3 {
   overflow: hidden;
   box-sizing: border-box;
 }
+/* Force grid display when visible — overrides .ar-only/.en-only { display: block } */
+.fees-grid.ar-only { display: grid; }
+.fees-grid.en-only { display: none; }
+[dir="ltr"] .fees-grid.ar-only { display: none; }
+[dir="ltr"] .fees-grid.en-only { display: grid; }
 .fees-cell {
   padding: 16px 22px;
   border-bottom: 1px solid var(--divider);
@@ -1976,7 +1981,4 @@ document.addEventListener('keydown', function(e) {
 // ============ SMOOTH SCROLL FOR IN-PAGE LINKS ============
 // Intercepts all #anchor links so navigation works reliably inside
 // embedded viewers (like chat app previews) without touching the URL.
-document.querySelectorAll('a[href^="#"]').forEach(link => {
-  link.addEventListener('click', function(e) {
-    const href = this.getAttribute('href');
-    if (href === '#' |
+document.qu
