@@ -591,60 +591,53 @@ body[dir="ltr"] .info-block h3 {
 
 /* ============ FEES ============ */
 #fees .section-inner {
-  display: block !important;
-  text-align: initial !important;
+  display: block;
 }
 .fees-wrapper {
-  display: block !important;
-  max-width: 1200px !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  margin-top: 20px !important;
-  box-sizing: border-box !important;
+  display: block;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  box-sizing: border-box;
 }
-.fees-table {
-  width: 100% !important;
-  table-layout: fixed !important;
-  border-collapse: collapse !important;
-  background: var(--cream) !important;
-  border: 1px solid var(--divider) !important;
+.fees-grid {
+  display: grid;
+  grid-template-columns: 55% 22.5% 22.5%;
+  width: 100%;
+  background: var(--cream);
+  border: 1px solid var(--divider);
+  border-radius: 4px;
+  overflow: hidden;
+  box-sizing: border-box;
 }
-
-.fees-table th:first-child,
-.fees-table td:first-child { width: 55% !important; }
-.fees-table th:nth-child(2),
-.fees-table td:nth-child(2) { width: 22.5% !important; }
-.fees-table th:nth-child(3),
-.fees-table td:nth-child(3) { width: 22.5% !important; }
-
-.fees-table th {
-  background: var(--green-deep);
-  color: var(--cream);
-  padding: 16px 22px;
-  text-align: start;
-  font-size: 14px;
-  font-weight: 700;
-}
-
-.fees-table td {
+.fees-cell {
   padding: 16px 22px;
   border-bottom: 1px solid var(--divider);
   font-size: 14px;
   color: var(--ink);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
 }
-
-.fees-table tr:last-child td { border-bottom: none; }
-.fees-table tr:hover { background: var(--cream-warm); }
-
-.fees-table .price {
+.fees-head-cell {
+  background: var(--green-deep) !important;
+  color: var(--cream) !important;
+  font-size: 14px;
+  font-weight: 700;
+  border-bottom: none;
+}
+.fees-cell.price {
   font-weight: 700;
   color: var(--copper);
   white-space: nowrap;
 }
-.fees-table .price.free {
+.fees-cell.price.free {
   color: var(--green-soft);
 }
-
+.fees-cell.span-2 {
+  grid-column: span 2;
+}
 .fees-note {
   margin-top: 20px;
   padding: 16px 20px;
@@ -656,8 +649,11 @@ body[dir="ltr"] .info-block h3 {
 }
 
 @media (max-width: 700px) {
-  .fees-table { font-size: 13px; }
-  .fees-table th, .fees-table td { padding: 10px 8px; }
+  .fees-grid {
+    grid-template-columns: 50% 25% 25%;
+    font-size: 13px;
+  }
+  .fees-cell { padding: 10px 8px; }
 }
 
 /* ============ COMMITTEES ============ */
@@ -1423,87 +1419,63 @@ span.ar-only, span.en-only { display: inline; }
 
     <div class="fees-wrapper">
 
-    <table class="fees-table ar-only">
-      <thead>
-        <tr>
-          <th>نوع المشاركة</th>
-          <th>مع النشر</th>
-          <th>بدون نشر</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>من داخل العراق — بحث منفرد <small>(تشمل الإقامة الفندقية)</small></td>
-          <td class="price">100,000 د.ع</td>
-          <td class="price">50,000 د.ع</td>
-        </tr>
-        <tr>
-          <td>من داخل الكلية — بحث منفرد</td>
-          <td class="price">75,000 د.ع</td>
-          <td class="price">50,000 د.ع</td>
-        </tr>
-        <tr>
-          <td>من داخل العراق — بحث مشترك <small>(تشمل الإقامة الفندقية)</small></td>
-          <td class="price">150,000 د.ع</td>
-          <td>—</td>
-        </tr>
-        <tr>
-          <td>من خارج العراق</td>
-          <td class="price free">مجاناً</td>
-          <td class="price free">مجاناً</td>
-        </tr>
-        <tr>
-          <td>الحضور مع شهادة الحضور فقط</td>
-          <td colspan="2" class="price">25,000 د.ع</td>
-        </tr>
-        <tr>
-          <td>المشاركة الإلكترونية — داخل العراق</td>
-          <td class="price">60,000 د.ع</td>
-          <td class="price">25,000 د.ع</td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="fees-grid ar-only">
+      <div class="fees-cell fees-head-cell">نوع المشاركة</div>
+      <div class="fees-cell fees-head-cell">مع النشر</div>
+      <div class="fees-cell fees-head-cell">بدون نشر</div>
 
-    <table class="fees-table en-only">
-      <thead>
-        <tr>
-          <th>Participation Type</th>
-          <th>With Publication</th>
-          <th>Without Publication</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Iraq — Single author <small>(includes hotel accommodation)</small></td>
-          <td class="price">100,000 IQD</td>
-          <td class="price">50,000 IQD</td>
-        </tr>
-        <tr>
-          <td>College of Education/Kerbala — Single author</td>
-          <td class="price">75,000 IQD</td>
-          <td class="price">50,000 IQD</td>
-        </tr>
-        <tr>
-          <td>Iraq — Co-authored <small>(includes hotel accommodation)</small></td>
-          <td class="price">150,000 IQD</td>
-          <td>—</td>
-        </tr>
-        <tr>
-          <td>Outside Iraq</td>
-          <td class="price free">Free</td>
-          <td class="price free">Free</td>
-        </tr>
-        <tr>
-          <td>Attendance with certificate only</td>
-          <td colspan="2" class="price">25,000 IQD</td>
-        </tr>
-        <tr>
-          <td>Electronic participation — from Iraq</td>
-          <td class="price">60,000 IQD</td>
-          <td class="price">25,000 IQD</td>
-        </tr>
-      </tbody>
-    </table>
+      <div class="fees-cell">من داخل العراق — بحث منفرد <small>(تشمل الإقامة الفندقية)</small></div>
+      <div class="fees-cell price">100,000 د.ع</div>
+      <div class="fees-cell price">50,000 د.ع</div>
+
+      <div class="fees-cell">من داخل الكلية — بحث منفرد</div>
+      <div class="fees-cell price">75,000 د.ع</div>
+      <div class="fees-cell price">50,000 د.ع</div>
+
+      <div class="fees-cell">من داخل العراق — بحث مشترك <small>(تشمل الإقامة الفندقية)</small></div>
+      <div class="fees-cell price">150,000 د.ع</div>
+      <div class="fees-cell">—</div>
+
+      <div class="fees-cell">من خارج العراق</div>
+      <div class="fees-cell price free">مجاناً</div>
+      <div class="fees-cell price free">مجاناً</div>
+
+      <div class="fees-cell">الحضور مع شهادة الحضور فقط</div>
+      <div class="fees-cell price span-2">25,000 د.ع</div>
+
+      <div class="fees-cell">المشاركة الإلكترونية — داخل العراق</div>
+      <div class="fees-cell price">60,000 د.ع</div>
+      <div class="fees-cell price">25,000 د.ع</div>
+    </div>
+
+    <div class="fees-grid en-only">
+      <div class="fees-cell fees-head-cell">Participation Type</div>
+      <div class="fees-cell fees-head-cell">With Publication</div>
+      <div class="fees-cell fees-head-cell">Without Publication</div>
+
+      <div class="fees-cell">Iraq — Single author <small>(includes hotel accommodation)</small></div>
+      <div class="fees-cell price">100,000 IQD</div>
+      <div class="fees-cell price">50,000 IQD</div>
+
+      <div class="fees-cell">College of Education/Kerbala — Single author</div>
+      <div class="fees-cell price">75,000 IQD</div>
+      <div class="fees-cell price">50,000 IQD</div>
+
+      <div class="fees-cell">Iraq — Co-authored <small>(includes hotel accommodation)</small></div>
+      <div class="fees-cell price">150,000 IQD</div>
+      <div class="fees-cell">—</div>
+
+      <div class="fees-cell">Outside Iraq</div>
+      <div class="fees-cell price free">Free</div>
+      <div class="fees-cell price free">Free</div>
+
+      <div class="fees-cell">Attendance with certificate only</div>
+      <div class="fees-cell price span-2">25,000 IQD</div>
+
+      <div class="fees-cell">Electronic participation — from Iraq</div>
+      <div class="fees-cell price">60,000 IQD</div>
+      <div class="fees-cell price">25,000 IQD</div>
+    </div>
 
     <div class="fees-note ar-only">
       <strong style="color:var(--green-deep);">ملاحظات:</strong><br>
@@ -2007,19 +1979,4 @@ document.addEventListener('keydown', function(e) {
 document.querySelectorAll('a[href^="#"]').forEach(link => {
   link.addEventListener('click', function(e) {
     const href = this.getAttribute('href');
-    if (href === '#' || href.length < 2) return;
-    const target = document.querySelector(href);
-    if (target) {
-      e.preventDefault();
-      const offset = 70;
-      const y = target.getBoundingClientRect().top + window.pageYOffset - offset;
-      window.scrollTo({ top: y, behavior: 'smooth' });
-    }
-  });
-});
-
-
-</script>
-
-</body>
-</html>
+    if (href === '#' |
