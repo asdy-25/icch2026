@@ -92,6 +92,10 @@ body[dir="ltr"] {
   width: 16px;
   height: 16px;
   flex-shrink: 0;
+  pointer-events: none;
+}
+.lang-toggle > span {
+  pointer-events: none;
 }
 @keyframes langAttn {
   0%, 100% {
@@ -1975,22 +1979,4 @@ function toggleMenu() {
   document.getElementById('mainNav').classList.toggle('open');
 }
 
-// Close mobile menu when a link is clicked
-document.querySelectorAll('.main-nav a').forEach(link => {
-  link.addEventListener('click', () => {
-    document.getElementById('mainNav').classList.remove('open');
-  });
-});
-
-// ============ MODAL SYSTEM ============
-// Any element with data-modal="modalId" opens that modal.
-// Any .modal-close button, click on overlay, or Escape key closes all modals.
-function openModal(id) {
-  const modal = document.getElementById(id);
-  if (!modal) return;
-  modal.classList.add('open');
-  document.body.classList.add('modal-open');
-  modal.scrollTop = 0;
-}
-function closeAllModals() {
-  document.querySelectorAll('.modal-overlay.open').forEach(m => m.
+// Close mobile menu when
